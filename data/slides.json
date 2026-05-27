@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Case Study: Why Copilot Stays in Search Mode",
+    "subtitle": "Honeywell: From Copilot training to Copilot as the operating system for engineering work",
+    "kicker": "Slide 1 - Title"
+  },
+  {
+    "title": "Senior Engineers Still Use Copilot Like Advanced Search",
+    "kicker": "Slide 2 - The Reality",
+    "keyMessage": "The default state of Copilot adoption is search mode.",
+    "quotes": [
+      "Most of the org treats Copilot like an advanced Google search."
+    ],
+    "bottomLine": "Copilot stays in Q&A mode when work has no durable system for Copilot to operate against."
+  },
+  {
+    "title": "Knowing the Mechanics != Running Work Through Copilot",
+    "kicker": "Slide 3 - The Adoption Gap",
+    "keyMessage": "Training can teach what Copilot can do, but it does not automatically change how engineering work is executed.",
+    "quotes": [
+      "The average one does not understand agents or skills.",
+      "Agents are still confusing."
+    ],
+    "bottomLine": "Feature awareness is not workflow transformation."
+  },
+  {
+    "title": "AI to Help with Legacy Modernization",
+    "kicker": "Slide 4 - Initial Ask",
+    "keyMessage": "This started as a real engineering problem, not an AI experiment.",
+    "bullets": [
+      "Legacy modernization need",
+      "ClearCase migration context",
+      "Reduce manual engineering effort",
+      "Explore GitHub Copilot for modernization",
+      "Standardize parts of engineering execution"
+    ]
+  },
+  {
+    "title": "The Right Microsoft Motion",
+    "kicker": "Slide 5 - Enablement and Workshops",
+    "keyMessage": "We responded with valuable enablement.",
+    "bullets": [
+      "Advanced GitHub Copilot training",
+      "Prompt files and reusable instructions",
+      "Intro to agents and skills",
+      "Agentic SDLC workshop",
+      "Here is how it could work"
+    ]
+  },
+  {
+    "title": "The Customer Learned the Mechanics",
+    "kicker": "Slide 6 - What the Workshops Delivered",
+    "keyMessage": "The workshops showed the art of the possible.",
+    "bullets": [
+      "Meeting notes to structured requirements",
+      "Requirements to issues",
+      "Issues to pull requests",
+      "Reusable prompts and instructions",
+      "Copilot across the SDLC"
+    ],
+    "speakerNote": "Knowing the mechanics is not the same as running the work through it."
+  },
+  {
+    "title": "The Work Became Concrete",
+    "kicker": "Slide 7 - From Demo to Real Design",
+    "keyMessage": "After the workshop, the engagement moved from general capability into Honeywell's actual implementation problem.",
+    "bullets": [
+      "Follow-up email loop with Gary",
+      "Real build artifacts surfaced",
+      "Real constraints became visible",
+      "Problem reframed step by step",
+      "Decision boundaries started to emerge"
+    ],
+    "bottomLine": "This was the bridge between workshop learning and execution reality."
+  },
+  {
+    "title": "Getting Lost at the Implementation Level",
+    "kicker": "Slide 8 - Implementation Friction",
+    "keyMessage": "This was the signal that more training was not enough.",
+    "quotes": [
+      "At a high level this makes sense, but I am getting lost at the implementation level."
+    ],
+    "bullets": [
+      "Direction was understood",
+      "Execution structure was missing",
+      "Working sessions were needed",
+      "A durable design surface was needed"
+    ]
+  },
+  {
+    "title": "The Problem Was Not Copilot Training. It Was the Missing System.",
+    "kicker": "Slide 9 - Core Insight",
+    "keyMessage": "Copilot needs a persistent system to work against.",
+    "bullets": [
+      "Requirements needed a home",
+      "Decisions needed to be externalized",
+      "Constraints needed to be visible",
+      "Design needed to be iterated",
+      "Copilot needed shared context"
+    ],
+    "bottomLine": "Copilot becomes operational when the work becomes addressable."
+  },
+  {
+    "title": "Spec-Driven Repo Created",
+    "kicker": "Slide 10 - Thinking System Installed",
+    "keyMessage": "Instead of more training, we installed a working system.",
+    "bullets": [
+      "Spec-driven repo created",
+      "Decisions and design externalized",
+      "Requirements became structured",
+      "Copilot had durable context",
+      "Work moved from conversation into system"
+    ]
+  },
+  {
+    "title": "From Ad Hoc Prompting to Structured Execution",
+    "kicker": "Slide 11 - What Changed",
+    "visual": "assets/before-after.svg",
+    "beforeAfter": {
+      "before": [
+        "Ask Copilot questions",
+        "Ad hoc prompts",
+        "Re-explain context",
+        "Individual usage",
+        "Assistant beside work"
+      ],
+      "after": [
+        "Work through the repo",
+        "Structured iteration",
+        "Context lives in system",
+        "Shared team surface",
+        "Execution interface"
+      ]
+    }
+  },
+  {
+    "title": "Copilot as Operating System",
+    "kicker": "Slide 12 - Current State",
+    "keyMessage": "Honeywell is now iterating inside the system using GitHub Copilot.",
+    "bullets": [
+      "Team is iterating in the repo",
+      "GitHub Copilot works inside the structure",
+      "Thinking system is the working surface",
+      "Pattern was marked as repeatable"
+    ],
+    "bottomLine": "If this works, they want to repeat it across other projects."
+  },
+  {
+    "title": "This Roots Microsoft AI in Execution",
+    "kicker": "Slide 13 - Business Impact",
+    "splitBullets": {
+      "leftTitle": "For customers",
+      "left": [
+        "Faster movement from idea to execution",
+        "Less repeated explanation",
+        "Clearer requirements and decisions",
+        "Reusable project pattern"
+      ],
+      "rightTitle": "For Microsoft",
+      "right": [
+        "Deeper GitHub Copilot usage",
+        "Stronger Microsoft AI presence",
+        "Expansion across projects",
+        "More durable engagement impact"
+      ]
+    },
+    "bottomLine": "The customer is not just using Copilot around the work. They are using Copilot to move the work."
+  },
+  {
+    "title": "Honeywell Engagement Timeline - How the Way of Working Changed",
+    "kicker": "Slide 14 - Visual Timeline",
+    "visual": "assets/timeline.svg",
+    "bullets": [
+      "Initial Ask: AI to help with legacy modernization",
+      "Enablement and Workshops: Copilot training plus Agentic SDLC",
+      "From Demo to Real Design: artifacts, constraints, boundaries surfaced",
+      "Implementation Friction: getting lost at implementation level",
+      "Thinking System Installed: spec-driven repo created",
+      "Copilot as Operating System: iterating in repo, pattern repeatable"
+    ]
+  },
+  {
+    "title": "How Copilot Adoption Actually Evolves",
+    "kicker": "Slide 15 - Adoption Model",
+    "visual": "assets/adoption-model.svg",
+    "bullets": [
+      "Awareness: training, demos, capability understanding",
+      "Exploration: prompt-based usage, Q&A, code help",
+      "Friction: no durable workflow, context, or structure",
+      "System Installation: specs, decisions, repo, templates, instructions",
+      "Workflow Integration: Copilot embedded in daily execution",
+      "Scale: pattern reused across teams and projects"
+    ]
+  },
+  {
+    "title": "Externalize -> Structure -> Install -> Execute -> Repeat",
+    "kicker": "Slide 16 - Reusable CSA Framework",
+    "visual": "assets/framework-loop.svg",
+    "bullets": [
+      "Externalize: bring real artifacts, decisions, and constraints into view",
+      "Structure: turn scattered thinking into design and boundaries",
+      "Install: create a system Copilot can work against",
+      "Execute: use Copilot inside the system",
+      "Repeat: scale the pattern across projects"
+    ]
+  },
+  {
+    "title": "We Should Not Stop at Copilot Enablement",
+    "kicker": "Slide 17 - What This Means for CSA Work",
+    "splitBullets": {
+      "leftTitle": "Do not stop at",
+      "left": [
+        "Training",
+        "Demos",
+        "Isolated prompts",
+        "One-off workshops"
+      ],
+      "rightTitle": "Drive toward",
+      "right": [
+        "Working through real design",
+        "Thinking system setup",
+        "Structured execution surfaces",
+        "Repeatable project patterns"
+      ]
+    },
+    "bottomLine": "Success metric: not they learned Copilot, but they now run work through Copilot."
+  },
+  {
+    "title": "Standardize This as a Microsoft Engagement Pattern",
+    "kicker": "Slide 18 - Opportunity",
+    "bullets": [
+      "Engagement playbook",
+      "From Demo to Real Design templates",
+      "Spec-driven repo starters",
+      "GitHub Copilot workflow guidance",
+      "Thinking-system templates",
+      "CSA coaching agent"
+    ],
+    "bottomLine": "Motion: initial ask -> enablement -> real design -> system installation -> Copilot-led execution -> repeat."
+  },
+  {
+    "title": "The Lesson from Honeywell",
+    "kicker": "Slide 19 - Closing Insight",
+    "keyMessage": "Copilot remains advanced search until the work is externalized into a system it can operate against.",
+    "bullets": [
+      "Workshops create awareness",
+      "Real design creates clarity",
+      "A thinking system creates adoption",
+      "Repeatability creates business impact"
+    ]
+  }
+]

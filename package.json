@@ -1,0 +1,16 @@
+{
+  "name": "honeywell-copilot-reveal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-deck.mjs",
+    "serve": "npx serve . -l 4173"
+  },
+  "dependencies": {
+    "reveal.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

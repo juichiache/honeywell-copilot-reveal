@@ -1,0 +1,44 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <text x="90" y="100" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="600" fill="#0F172A">From Ad Hoc Prompting to Structured Execution</text>
+  <text x="90" y="140" font-family="Inter, Arial, sans-serif" font-size="24" fill="#475569">What changed after installing the thinking system</text>
+
+  <rect x="90" y="190" width="670" height="620" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="130" y="250" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600" fill="#991B1B">Before</text>
+
+  <rect x="120" y="280" width="610" height="85" rx="10" fill="#FEF2F2"/>
+  <text x="150" y="332" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7F1D1D">Ask Copilot questions</text>
+
+  <rect x="120" y="382" width="610" height="85" rx="10" fill="#FEF2F2"/>
+  <text x="150" y="434" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7F1D1D">Ad hoc prompts</text>
+
+  <rect x="120" y="484" width="610" height="85" rx="10" fill="#FEF2F2"/>
+  <text x="150" y="536" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7F1D1D">Re-explain context repeatedly</text>
+
+  <rect x="120" y="586" width="610" height="85" rx="10" fill="#FEF2F2"/>
+  <text x="150" y="638" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7F1D1D">Individual usage patterns</text>
+
+  <rect x="120" y="688" width="610" height="85" rx="10" fill="#FEF2F2"/>
+  <text x="150" y="740" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7F1D1D">Assistant beside work</text>
+
+  <rect x="840" y="190" width="670" height="620" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="880" y="250" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600" fill="#1E3A8A">After</text>
+
+  <rect x="870" y="280" width="610" height="85" rx="10" fill="#EFF6FF"/>
+  <text x="900" y="332" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1E40AF">Work through the repo</text>
+
+  <rect x="870" y="382" width="610" height="85" rx="10" fill="#EFF6FF"/>
+  <text x="900" y="434" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1E40AF">Structured iteration loops</text>
+
+  <rect x="870" y="484" width="610" height="85" rx="10" fill="#EFF6FF"/>
+  <text x="900" y="536" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1E40AF">Context lives in system</text>
+
+  <rect x="870" y="586" width="610" height="85" rx="10" fill="#EFF6FF"/>
+  <text x="900" y="638" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1E40AF">Shared team surface</text>
+
+  <rect x="870" y="688" width="610" height="85" rx="10" fill="#EFF6FF"/>
+  <text x="900" y="740" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1E40AF">Execution interface</text>
+
+  <line x1="770" y1="505" x2="830" y2="505" stroke="#2063FF" stroke-width="5"/>
+  <polygon points="830,505 814,496 814,514" fill="#2063FF"/>
+</svg>

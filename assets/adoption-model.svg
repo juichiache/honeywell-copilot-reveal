@@ -1,0 +1,44 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <text x="90" y="100" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="600" fill="#0F172A">How Copilot Adoption Actually Evolves</text>
+  <text x="90" y="140" font-family="Inter, Arial, sans-serif" font-size="24" fill="#475569">Progression from awareness to scale requires system installation</text>
+
+  <rect x="120" y="640" width="220" height="130" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="145" y="690" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#0F172A">1 Awareness</text>
+  <text x="145" y="725" font-family="Inter, Arial, sans-serif" font-size="20" fill="#334155">Training, demos</text>
+
+  <rect x="360" y="560" width="220" height="130" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="385" y="610" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#0F172A">2 Exploration</text>
+  <text x="385" y="645" font-family="Inter, Arial, sans-serif" font-size="20" fill="#334155">Prompt-based use</text>
+
+  <rect x="600" y="480" width="220" height="130" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="625" y="530" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#991B1B">3 Friction</text>
+  <text x="625" y="565" font-family="Inter, Arial, sans-serif" font-size="20" fill="#7F1D1D">Missing structure</text>
+
+  <rect x="840" y="400" width="220" height="130" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="865" y="450" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#1E3A8A">4 Install</text>
+  <text x="865" y="485" font-family="Inter, Arial, sans-serif" font-size="20" fill="#1E40AF">Specs, repo,</text>
+  <text x="865" y="512" font-family="Inter, Arial, sans-serif" font-size="20" fill="#1E40AF">templates</text>
+
+  <rect x="1080" y="320" width="220" height="130" rx="12" fill="#DBEAFE" stroke="#60A5FA" stroke-width="2"/>
+  <text x="1105" y="370" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#1E3A8A">5 Integration</text>
+  <text x="1105" y="405" font-family="Inter, Arial, sans-serif" font-size="20" fill="#1E40AF">Daily execution</text>
+
+  <rect x="1320" y="240" width="220" height="130" rx="12" fill="#CFFAFE" stroke="#67E8F9" stroke-width="2"/>
+  <text x="1345" y="290" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#155E75">6 Scale</text>
+  <text x="1345" y="325" font-family="Inter, Arial, sans-serif" font-size="20" fill="#0E7490">Reuse pattern</text>
+
+  <line x1="340" y1="705" x2="360" y2="625" stroke="#94A3B8" stroke-width="4"/>
+  <polygon points="360,625 347,632 362,638" fill="#94A3B8"/>
+  <line x1="580" y1="625" x2="600" y2="545" stroke="#94A3B8" stroke-width="4"/>
+  <polygon points="600,545 587,552 602,558" fill="#94A3B8"/>
+  <line x1="820" y1="545" x2="840" y2="465" stroke="#94A3B8" stroke-width="4"/>
+  <polygon points="840,465 827,472 842,478" fill="#94A3B8"/>
+  <line x1="1060" y1="465" x2="1080" y2="385" stroke="#94A3B8" stroke-width="4"/>
+  <polygon points="1080,385 1067,392 1082,398" fill="#94A3B8"/>
+  <line x1="1300" y1="385" x2="1320" y2="305" stroke="#94A3B8" stroke-width="4"/>
+  <polygon points="1320,305 1307,312 1322,318" fill="#94A3B8"/>
+
+  <rect x="90" y="180" width="660" height="90" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="120" y="235" font-family="Inter, Arial, sans-serif" font-size="30" fill="#0F172A">Without stage 4, adoption plateaus in stage 2-3.</text>
+</svg>

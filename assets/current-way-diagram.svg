@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <text x="80" y="85" font-family="Inter, Arial, sans-serif" font-size="44" fill="#0F172A" font-weight="600">Current Way of Working: Fragmented and Repetitive</text>
+  <text x="80" y="125" font-family="Inter, Arial, sans-serif" font-size="24" fill="#475569">Experts brain-dump across disconnected surfaces, creating siloed human + AI loops</text>
+
+  <rect x="80" y="180" width="430" height="470" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="110" y="225" font-family="Inter, Arial, sans-serif" font-size="28" fill="#0F172A" font-weight="600">Expert Inputs</text>
+  <rect x="110" y="250" width="370" height="62" rx="10" fill="#F1F5F9"/>
+  <text x="130" y="290" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Meetings</text>
+  <rect x="110" y="327" width="370" height="62" rx="10" fill="#F1F5F9"/>
+  <text x="130" y="367" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Documents</text>
+  <rect x="110" y="404" width="370" height="62" rx="10" fill="#F1F5F9"/>
+  <text x="130" y="444" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Workshops</text>
+  <rect x="110" y="481" width="370" height="62" rx="10" fill="#F1F5F9"/>
+  <text x="130" y="521" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Emails / Chats</text>
+  <rect x="110" y="558" width="370" height="62" rx="10" fill="#F1F5F9"/>
+  <text x="130" y="598" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Whiteboards / Notes</text>
+
+  <rect x="585" y="240" width="430" height="330" rx="16" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="615" y="285" font-family="Inter, Arial, sans-serif" font-size="28" fill="#0F172A" font-weight="600">Siloed Collaboration Loops</text>
+  <rect x="615" y="315" width="180" height="85" rx="10" fill="#DBEAFE"/>
+  <text x="641" y="352" font-family="Inter, Arial, sans-serif" font-size="22" fill="#1E3A8A">Customer</text>
+  <text x="641" y="378" font-family="Inter, Arial, sans-serif" font-size="22" fill="#1E3A8A">humans</text>
+  <rect x="805" y="315" width="180" height="85" rx="10" fill="#E0E7FF"/>
+  <text x="842" y="352" font-family="Inter, Arial, sans-serif" font-size="22" fill="#3730A3">Microsoft</text>
+  <text x="842" y="378" font-family="Inter, Arial, sans-serif" font-size="22" fill="#3730A3">humans</text>
+  <rect x="710" y="425" width="180" height="95" rx="10" fill="#F5F3FF"/>
+  <text x="772" y="465" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5B21B6">AI</text>
+  <text x="732" y="491" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5B21B6">assistants</text>
+
+  <line x1="510" y1="360" x2="585" y2="360" stroke="#94A3B8" stroke-width="3"/>
+  <polygon points="585,360 571,352 571,368" fill="#94A3B8"/>
+  <line x1="510" y1="470" x2="585" y2="470" stroke="#94A3B8" stroke-width="3"/>
+  <polygon points="585,470 571,462 571,478" fill="#94A3B8"/>
+
+  <path d="M795 355 C815 355 815 355 835 355" stroke="#2563EB" stroke-width="3"/>
+  <polygon points="835,355 823,348 823,362" fill="#2563EB"/>
+  <path d="M895 400 C895 420 820 420 820 425" stroke="#7C3AED" stroke-width="3"/>
+  <polygon points="820,425 812,413 828,413" fill="#7C3AED"/>
+  <path d="M800 425 C800 415 705 410 705 400" stroke="#7C3AED" stroke-width="3"/>
+  <polygon points="705,400 713,412 697,412" fill="#7C3AED"/>
+  <path d="M710 355 C690 355 690 355 670 355" stroke="#2563EB" stroke-width="3"/>
+  <polygon points="670,355 682,348 682,362" fill="#2563EB"/>
+
+  <rect x="1090" y="180" width="430" height="470" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="1120" y="225" font-family="Inter, Arial, sans-serif" font-size="28" fill="#0F172A" font-weight="600">More Artifacts, More Drift</text>
+  <rect x="1120" y="250" width="370" height="62" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="1140" y="290" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Decisions in one deck</text>
+  <rect x="1120" y="327" width="370" height="62" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="1140" y="367" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Questions in another thread</text>
+  <rect x="1120" y="404" width="370" height="62" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="1140" y="444" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Requirements in partial docs</text>
+  <rect x="1120" y="481" width="370" height="62" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="1140" y="521" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E293B">Actions split across people</text>
+  <rect x="1120" y="558" width="370" height="62" rx="10" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="1140" y="598" font-family="Inter, Arial, sans-serif" font-size="24" fill="#991B1B">Repeated meetings to restate context</text>
+
+  <line x1="1015" y1="360" x2="1090" y2="360" stroke="#94A3B8" stroke-width="3"/>
+  <polygon points="1090,360 1076,352 1076,368" fill="#94A3B8"/>
+  <line x1="1015" y1="470" x2="1090" y2="470" stroke="#94A3B8" stroke-width="3"/>
+  <polygon points="1090,470 1076,462 1076,478" fill="#94A3B8"/>
+
+  <rect x="80" y="700" width="1440" height="125" rx="14" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="110" y="748" font-family="Inter, Arial, sans-serif" font-size="30" fill="#1E3A8A" font-weight="600">Result: No shared operating system for work</text>
+  <text x="110" y="787" font-family="Inter, Arial, sans-serif" font-size="24" fill="#1E40AF">Missed details, repeated explanation, and weak big-picture clarity</text>
+</svg>

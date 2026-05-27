@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honeywell Copilot Case Study</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" />
+    <style>
+      :root {
+        --r-main-font: "Inter", "Segoe UI", Arial, sans-serif;
+        --r-heading-font: "Inter", "Segoe UI", Arial, sans-serif;
+      }
+      .reveal .slides {
+        text-align: left;
+      }
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        letter-spacing: -0.02em;
+        text-transform: none;
+      }
+      .kicker {
+        font-size: 0.48em;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.75;
+      }
+      .bottom-line {
+        margin-top: 1rem;
+        padding: 0.8rem 1rem;
+        border-left: 4px solid #2063ff;
+        background: rgba(32, 99, 255, 0.08);
+        font-size: 0.72em;
+      }
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .card {
+        border: 1px solid #d8dce5;
+        border-radius: 8px;
+        padding: 0.8rem 1rem;
+        background: #fff;
+      }
+      .small {
+        font-size: 0.72em;
+      }
+      .diagram {
+        width: 100%;
+        border: 1px solid #d8dce5;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        %%SLIDES%%
+      </div>
+    </div>
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        controls: true,
+        progress: true,
+        transition: "fade",
+        slideNumber: "c/t"
+      });
+    </script>
+  </body>
+</html>
