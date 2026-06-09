@@ -21,12 +21,14 @@
       .reveal .slides { text-align: center; }
       .reveal section.slide {
         box-sizing: border-box;
-        padding: 0.6rem 1.2rem 1.1rem;
+        padding: 1rem 1.6rem 1.2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         height: 100%;
+        max-height: 100%;
+        overflow: hidden;
       }
       .reveal h1, .reveal h2, .reveal h3 {
         letter-spacing: -0.02em;
@@ -60,10 +62,12 @@
       /* Hero visuals */
       .hero-svg {
         display: block;
-        width: min(94%, 980px);
-        max-height: 46vh;
+        width: min(88%, 920px);
+        max-height: 42vh;
         object-fit: contain;
         margin: 0.4rem auto;
+        flex: 0 1 auto;
+        min-height: 0;
       }
       .hero-icon {
         width: 140px;
