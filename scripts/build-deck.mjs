@@ -68,6 +68,28 @@ const heroHtml = (slide) => {
   return "";
 };
 
+const lessonsHtml = (lessons = []) => {
+  if (!lessons.length) return "";
+  const rows = lessons
+    .map(
+      (r) => `<tr>
+        <td>${escapeHtml(r.learned)}</td>
+        <td>${escapeHtml(r.change)}</td>
+        <td>${escapeHtml(r.example)}</td>
+      </tr>`
+    )
+    .join("");
+  return `
+    <table class="lessons-table">
+      <thead><tr>
+        <th>What we learned</th>
+        <th>What we should change</th>
+        <th>Example</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+};
+
 const buildSlide = (slide) => {
   const parts = [];
   const layout = slide.layout || (slide.visual ? "visual" : slide.icon ? "icon" : "text");
@@ -86,6 +108,7 @@ const buildSlide = (slide) => {
   parts.push(beforeAfterHtml(slide.beforeAfter));
   parts.push(splitHtml(slide.split));
   parts.push(quoteHtml(slide.quotes));
+  parts.push(lessonsHtml(slide.lessons || []));
 
   if (slide.bottomLine) parts.push(`<div class="bottom-line"><strong>Bottom line:</strong> ${escapeHtml(slide.bottomLine)}</div>`);
 

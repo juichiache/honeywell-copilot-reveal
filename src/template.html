@@ -183,6 +183,48 @@
         color: var(--ink);
       }
 
+      /* Lessons table */
+      .lessons-table {
+        width: 96%;
+        border-collapse: collapse;
+        margin: 0.3em auto;
+        font-size: 0.53em;
+        flex: 1;
+        align-self: center;
+      }
+      .lessons-table thead th {
+        background: var(--accent-soft);
+        color: var(--accent);
+        padding: 0.4em 0.65em;
+        text-align: left;
+        border-bottom: 2px solid var(--accent);
+        font-size: 0.9em;
+        letter-spacing: 0.03em;
+      }
+      .lessons-table tbody td {
+        padding: 0.38em 0.65em;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        line-height: 1.35;
+        color: var(--ink);
+      }
+      .lessons-table tbody tr:nth-child(even) td {
+        background: rgba(255,255,255,0.03);
+      }
+      .lessons-table tbody td:first-child {
+        font-weight: 600;
+        width: 26%;
+        color: rgba(255,255,255,0.88);
+      }
+      .lessons-table tbody td:nth-child(2) {
+        width: 40%;
+      }
+      .lessons-table tbody td:last-child {
+        width: 34%;
+        color: var(--muted);
+        font-style: italic;
+      }
+
       /* Title slide */
       .title-slide { justify-content: center; }
       .title-slide h2   { font-size: 2em; }

@@ -183,6 +183,48 @@
         color: var(--ink);
       }
 
+      /* Lessons table */
+      .lessons-table {
+        width: 96%;
+        border-collapse: collapse;
+        margin: 0.3em auto;
+        font-size: 0.53em;
+        flex: 1;
+        align-self: center;
+      }
+      .lessons-table thead th {
+        background: var(--accent-soft);
+        color: var(--accent);
+        padding: 0.4em 0.65em;
+        text-align: left;
+        border-bottom: 2px solid var(--accent);
+        font-size: 0.9em;
+        letter-spacing: 0.03em;
+      }
+      .lessons-table tbody td {
+        padding: 0.38em 0.65em;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        line-height: 1.35;
+        color: var(--ink);
+      }
+      .lessons-table tbody tr:nth-child(even) td {
+        background: rgba(255,255,255,0.03);
+      }
+      .lessons-table tbody td:first-child {
+        font-weight: 600;
+        width: 26%;
+        color: rgba(255,255,255,0.88);
+      }
+      .lessons-table tbody td:nth-child(2) {
+        width: 40%;
+      }
+      .lessons-table tbody td:last-child {
+        width: 34%;
+        color: var(--muted);
+        font-style: italic;
+      }
+
       /* Title slide */
       .title-slide { justify-content: center; }
       .title-slide h2   { font-size: 2em; }
@@ -247,6 +289,38 @@
 <p class="tagline">Initial ask → enablement → real design → system install → customer-owned iteration → repeat.</p>
 <div class="chips"><div class="chip">Playbook</div><div class="chip">Spec-driven repo starters</div><div class="chip">Copilot workflow guidance</div><div class="chip">CSA coaching agent</div></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Stop measuring attendance. Start measuring whether the team runs work through Copilot.</div></section>
+<section class="slide layout-text"><div class="kicker">What Honeywell Taught Us</div>
+<h2>Why Adoption Stalls — and How to Change the Motion</h2>
+
+    <table class="lessons-table">
+      <thead><tr>
+        <th>What we learned</th>
+        <th>What we should change</th>
+        <th>Example</th>
+      </tr></thead>
+      <tbody><tr>
+        <td>Customers get stuck below the concept layer</td>
+        <td>Run design sessions as decision-conversion sessions. Capture: decision, owner, rationale, constraint, next test.</td>
+        <td>&quot;Decision needed: migration unit = app/module/component; owner = Gary; test = apply to one real build path.&quot;</td>
+      </tr><tr>
+        <td>Workshops teach mechanics but don&#39;t change behavior</td>
+        <td>End every workshop with a working surface, not slides: repo, spec, prompt files, decision log, next tasks.</td>
+        <td>After Agentic SDLC workshop, leave a repo where Copilot can generate issues from the real Honeywell spec.</td>
+      </tr><tr>
+        <td>Adoption stalls when Copilot has no system to work against</td>
+        <td>Build a Copilot-addressable project system: specs, constraints, decisions, open questions, task paths.</td>
+        <td>Copilot reads the spec repo and asks specific questions about build artifacts instead of giving generic advice.</td>
+      </tr><tr>
+        <td>Meetings repeat because context is fragmented</td>
+        <td>Start each follow-up from the system: what changed, what is open, what was decided. Update it live.</td>
+        <td>&quot;Last time we decided X, left Y open, need to resolve Z today.&quot; Update the repo during the call.</td>
+      </tr><tr>
+        <td>Microsoft becomes the clarification path</td>
+        <td>Coach the customer to query, update, and improve the system themselves. Success = customer self-service.</td>
+        <td>Gary updates planning details in Copilot, then starts two more projects without needing Microsoft.</td>
+      </tr></tbody>
+    </table>
+<div class="bottom-line"><strong>Bottom line:</strong> The change is not fewer design sessions. It is changing design sessions from advice delivery into system-building.</div></section>
       </div>
     </div>
     <script src="node_modules/reveal.js/dist/reveal.js"></script>
