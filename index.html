@@ -183,6 +183,76 @@
         color: var(--ink);
       }
 
+      /* Stats block */
+      .stats-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+        gap: 0.35em;
+        margin: 0.25em auto;
+        flex: 1;
+      }
+      .stats-row {
+        display: flex;
+        gap: 0.5em;
+        justify-content: center;
+        width: 100%;
+      }
+      .stat-card {
+        flex: 1;
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 0.45em 0.6em;
+        text-align: center;
+      }
+      .stat-card .stat-value {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.1;
+      }
+      .stat-card .stat-label {
+        font-size: 0.58em;
+        color: var(--muted);
+        margin-top: 0.2em;
+      }
+      .stat-card .stat-detail {
+        font-size: 0.5em;
+        color: var(--muted);
+        opacity: 0.7;
+        margin-top: 0.12em;
+      }
+      .stat-card.stat-emphasis {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+        padding: 0.55em 2em;
+        width: 55%;
+        flex: none;
+      }
+      .stat-card.stat-emphasis .stat-value {
+        font-size: 3em;
+        color: var(--accent);
+      }
+      .stat-card.stat-emphasis .stat-label {
+        font-size: 0.7em;
+        color: var(--ink);
+      }
+      .stat-card.stat-emphasis .stat-detail {
+        font-size: 0.58em;
+        color: var(--accent);
+        opacity: 0.85;
+      }
+      .stats-source {
+        font-size: 0.4em;
+        color: var(--muted);
+        opacity: 0.6;
+        margin-top: 0.15em;
+        text-align: right;
+        width: 100%;
+      }
+
       /* Lessons table */
       .lessons-table {
         width: 96%;
@@ -244,6 +314,7 @@
 <section class="slide layout-visual"><div class="kicker">The Problem</div>
 <h2>Training alone leaves Copilot in search mode</h2>
 <img class="hero-svg" src="assets/current-way-diagram.svg" alt="Training alone leaves Copilot in search mode" />
+<p class="tagline">Only 23% of Honeywell PRs use Copilot review. Copilot is deployed — not yet operational.</p>
 <div class="quotes"><blockquote class="pull-quote">Most of the org treats Copilot like an advanced Google search.</blockquote></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Feature awareness is not workflow transformation.</div></section>
 <section class="slide layout-visual"><div class="kicker">The Journey</div>
@@ -258,68 +329,75 @@
 <div class="chips"><div class="chip">Requirements with a home</div><div class="chip">Decisions externalized</div><div class="chip">Constraints visible</div><div class="chip">Durable Copilot context</div></div></section>
 <section class="slide layout-visual"><div class="kicker">What Changed</div>
 <h2>From ad hoc prompting to structured execution</h2>
-<img class="hero-svg" src="assets/before-after-comparison.svg" alt="From ad hoc prompting to structured execution" /></section>
+<img class="hero-svg" src="assets/before-after-comparison.svg" alt="From ad hoc prompting to structured execution" />
+<div class="bottom-line"><strong>Bottom line:</strong> Same tool. Different relationship to the work.</div></section>
 <section class="slide layout-visual"><div class="kicker">Current State</div>
 <h2>Customer-owned iteration has started</h2>
 <img class="hero-svg" src="assets/customer-iteration.svg" alt="Customer-owned iteration has started" />
-<div class="quotes"><blockquote class="pull-quote">AI is walking me through the process it wants with respect to details.</blockquote></div>
-<div class="bottom-line"><strong>Bottom line:</strong> The framework let the customer keep moving without Microsoft in every step.</div></section>
+<p class="tagline">Gary — Honeywell Engineering Lead — now drives iteration through the repo without Microsoft in every step.</p>
+<div class="quotes"><blockquote class="pull-quote">AI is walking me through the process it wants with respect to details.</blockquote></div></section>
 <section class="slide layout-visual"><div class="kicker">Expansion Signal</div>
 <h2>The pattern is already spreading</h2>
 <img class="hero-svg" src="assets/expansion-signal.svg" alt="The pattern is already spreading" />
-<div class="bottom-line"><strong>Bottom line:</strong> This moved from a one-project artifact to a repeatable way of working.</div></section>
+<p class="tagline">One project became the template. Gary applied it independently to two more Honeywell initiatives.</p>
+<div class="bottom-line"><strong>Bottom line:</strong> Expansion probability scored 77/100 — 5,478-seat opportunity already in motion.</div></section>
+<section class="slide layout-text"><div class="kicker">The Proof</div>
+<h2>Wide adoption, shallow depth — the gap the system closes</h2>
+<div class="stats-block">
+    <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-value">58.6%</div>
+      <div class="stat-label">Copilot adoption</div>
+      <div class="stat-detail">7,597 billable of 12,971 seats</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">+7%</div>
+      <div class="stat-label">MoM active-seat growth</div>
+      <div class="stat-detail">7,379 → 8,431 · Mar–May 2026</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$303.6K</div>
+      <div class="stat-label">Copilot ACR, YTD</div>
+      <div class="stat-detail">$71K run-rate in May</div>
+    </div></div>
+    
+    <div class="stat-card stat-emphasis">
+      <div class="stat-value">23%</div>
+      <div class="stat-label">of PRs use Copilot review</div>
+      <div class="stat-detail">the depth gap — still search mode</div>
+    </div>
+    <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-value">77/100</div>
+      <div class="stat-label">expansion probability</div>
+      <div class="stat-detail">5,478-seat opportunity, scored high</div>
+    </div></div>
+    <div class="stats-source">► Honeywell Copilot usage report, May 2026</div>
+  </div>
+<div class="bottom-line"><strong>Bottom line:</strong> Breadth is already won. The 23% is the whole story: Copilot is deployed, not yet operational. The thinking system is what converts seats into workflow.</div></section>
 <section class="slide layout-text"><div class="kicker">Business Impact</div>
 <h2>Microsoft AI rooted in customer execution</h2>
 
     <div class="split">
       <div class="card">
         <h4>For Honeywell</h4>
-        <div class="chips"><div class="chip">AI guides planning</div><div class="chip">Company context added</div><div class="chip">Customer iterates alone</div><div class="chip">Three projects in motion</div></div>
+        <div class="chips"><div class="chip">AI guides planning</div><div class="chip">Company context added</div><div class="chip">Customer iterates alone</div><div class="chip">Pattern spreading across projects</div></div>
       </div>
       <div class="card">
         <h4>For Microsoft</h4>
-        <div class="chips"><div class="chip">Copilot → execution support</div><div class="chip">Framework partner role</div><div class="chip">Scales without us in every meeting</div><div class="chip">Customer-led expansion</div></div>
+        <div class="chips"><div class="chip">$303.6K ACR YTD · $71K/mo run-rate</div><div class="chip">5,478-seat opp scored 77/100</div><div class="chip">Framework scales without us</div><div class="chip">Customer-led expansion</div></div>
       </div>
     </div>
   
 <div class="bottom-line"><strong>Bottom line:</strong> The customer is using AI to structure, question, update, and advance the work — not just around it.</div></section>
 <section class="slide layout-icon"><div class="kicker">Call to Action</div>
-<h2>Standardize this as a Microsoft engagement pattern</h2>
+<h2>Pilot this as a Microsoft engagement pattern</h2>
 <div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6 C 42 16, 46 30, 46 40 L18 40 C 18 30, 22 16, 32 6 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><circle cx="32" cy="24" r="4" stroke="currentColor" stroke-width="3"/><path d="M18 40 L10 54 L22 48 M46 40 L54 54 L42 48" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/></svg></div>
 <p class="tagline">Initial ask → enablement → real design → system install → customer-owned iteration → repeat.</p>
-<div class="chips"><div class="chip">Playbook</div><div class="chip">Spec-driven repo starters</div><div class="chip">Copilot workflow guidance</div><div class="chip">CSA coaching agent</div></div>
+<div class="chips"><div class="chip">Playbook</div><div class="chip">Spec-driven repo starters</div><div class="chip">Copilot workflow guidance</div><div class="chip">Engagement Thinking Coach</div></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Stop measuring attendance. Start measuring whether the team runs work through Copilot.</div></section>
 <section class="slide layout-text"><div class="kicker">What Honeywell Taught Us</div>
 <h2>Why Adoption Stalls — and How to Change the Motion</h2>
-
-    <table class="lessons-table">
-      <thead><tr>
-        <th>What we learned</th>
-        <th>What we should change</th>
-        <th>Example</th>
-      </tr></thead>
-      <tbody><tr>
-        <td>Customers get stuck below the concept layer</td>
-        <td>Run design sessions as decision-conversion sessions. Capture: decision, owner, rationale, constraint, next test.</td>
-        <td>&quot;Decision needed: migration unit = app/module/component; owner = Gary; test = apply to one real build path.&quot;</td>
-      </tr><tr>
-        <td>Workshops teach mechanics but don&#39;t change behavior</td>
-        <td>End every workshop with a working surface, not slides: repo, spec, prompt files, decision log, next tasks.</td>
-        <td>After Agentic SDLC workshop, leave a repo where Copilot can generate issues from the real Honeywell spec.</td>
-      </tr><tr>
-        <td>Adoption stalls when Copilot has no system to work against</td>
-        <td>Build a Copilot-addressable project system: specs, constraints, decisions, open questions, task paths.</td>
-        <td>Copilot reads the spec repo and asks specific questions about build artifacts instead of giving generic advice.</td>
-      </tr><tr>
-        <td>Meetings repeat because context is fragmented</td>
-        <td>Start each follow-up from the system: what changed, what is open, what was decided. Update it live.</td>
-        <td>&quot;Last time we decided X, left Y open, need to resolve Z today.&quot; Update the repo during the call.</td>
-      </tr><tr>
-        <td>Microsoft becomes the clarification path</td>
-        <td>Coach the customer to query, update, and improve the system themselves. Success = customer self-service.</td>
-        <td>Gary updates planning details in Copilot, then starts two more projects without needing Microsoft.</td>
-      </tr></tbody>
-    </table>
 <div class="bottom-line"><strong>Bottom line:</strong> The change is not fewer design sessions. It is changing design sessions from advice delivery into system-building.</div></section>
       </div>
     </div>

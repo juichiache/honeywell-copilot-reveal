@@ -183,6 +183,76 @@
         color: var(--ink);
       }
 
+      /* Stats block */
+      .stats-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+        gap: 0.35em;
+        margin: 0.25em auto;
+        flex: 1;
+      }
+      .stats-row {
+        display: flex;
+        gap: 0.5em;
+        justify-content: center;
+        width: 100%;
+      }
+      .stat-card {
+        flex: 1;
+        background: var(--card-bg);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 0.45em 0.6em;
+        text-align: center;
+      }
+      .stat-card .stat-value {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.1;
+      }
+      .stat-card .stat-label {
+        font-size: 0.58em;
+        color: var(--muted);
+        margin-top: 0.2em;
+      }
+      .stat-card .stat-detail {
+        font-size: 0.5em;
+        color: var(--muted);
+        opacity: 0.7;
+        margin-top: 0.12em;
+      }
+      .stat-card.stat-emphasis {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+        padding: 0.55em 2em;
+        width: 55%;
+        flex: none;
+      }
+      .stat-card.stat-emphasis .stat-value {
+        font-size: 3em;
+        color: var(--accent);
+      }
+      .stat-card.stat-emphasis .stat-label {
+        font-size: 0.7em;
+        color: var(--ink);
+      }
+      .stat-card.stat-emphasis .stat-detail {
+        font-size: 0.58em;
+        color: var(--accent);
+        opacity: 0.85;
+      }
+      .stats-source {
+        font-size: 0.4em;
+        color: var(--muted);
+        opacity: 0.6;
+        margin-top: 0.15em;
+        text-align: right;
+        width: 100%;
+      }
+
       /* Lessons table */
       .lessons-table {
         width: 96%;

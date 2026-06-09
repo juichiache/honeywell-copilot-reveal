@@ -55,6 +55,28 @@ const beforeAfterHtml = (ba) => {
   `;
 };
 
+const statsHtml = (stats = [], source = "") => {
+  if (!stats.length) return "";
+  const empIdx = stats.findIndex((s) => s.emphasis);
+  const topStats = empIdx > 0 ? stats.slice(0, empIdx) : stats.filter((s) => !s.emphasis).slice(0, 3);
+  const empStat = empIdx >= 0 ? stats[empIdx] : null;
+  const bottomStats = empIdx >= 0 ? stats.slice(empIdx + 1) : [];
+
+  const statCard = (s, cls = "") => `
+    <div class="stat-card${cls}">
+      <div class="stat-value">${escapeHtml(s.value)}</div>
+      <div class="stat-label">${escapeHtml(s.label)}</div>
+      ${s.detail ? `<div class="stat-detail">${escapeHtml(s.detail)}</div>` : ""}
+    </div>`;
+
+  return `<div class="stats-block">
+    ${topStats.length ? `<div class="stats-row">${topStats.map((s) => statCard(s)).join("")}</div>` : ""}
+    ${empStat ? statCard(empStat, " stat-emphasis") : ""}
+    ${bottomStats.length ? `<div class="stats-row">${bottomStats.map((s) => statCard(s)).join("")}</div>` : ""}
+    ${source ? `<div class="stats-source">\u25ba ${escapeHtml(source)}</div>` : ""}
+  </div>`;
+};
+
 const heroHtml = (slide) => {
   if (slide.visual) {
     return `<img class="hero-svg" src="${escapeHtml(slide.visual)}" alt="${escapeHtml(slide.title || "Slide visual")}" />`;
@@ -108,7 +130,7 @@ const buildSlide = (slide) => {
   parts.push(beforeAfterHtml(slide.beforeAfter));
   parts.push(splitHtml(slide.split));
   parts.push(quoteHtml(slide.quotes));
-  parts.push(lessonsHtml(slide.lessons || []));
+  parts.push(statsHtml(slide.stats || [], slide.source || ""));
 
   if (slide.bottomLine) parts.push(`<div class="bottom-line"><strong>Bottom line:</strong> ${escapeHtml(slide.bottomLine)}</div>`);
 
