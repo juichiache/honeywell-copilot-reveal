@@ -17,6 +17,7 @@
       }
       .reveal section {
         box-sizing: border-box;
+        padding: 1.1rem 1.35rem;
       }
       .reveal h1,
       .reveal h2,
@@ -37,14 +38,14 @@
         margin: 0.12em 0;
       }
       .reveal section.has-visual {
-        font-size: 0.82em;
+        font-size: 0.76em;
       }
       .reveal section.has-visual h2 {
-        font-size: 1.45em;
+        font-size: 1.36em;
       }
       .reveal section.has-visual ul {
-        font-size: 0.74em;
-        line-height: 1.22;
+        font-size: 0.7em;
+        line-height: 1.18;
       }
       .kicker {
         font-size: 0.48em;
@@ -75,10 +76,10 @@
       }
       .diagram {
         display: block;
-        width: min(100%, 820px);
-        max-height: 38vh;
+        width: min(92%, 720px);
+        max-height: 32vh;
         object-fit: contain;
-        margin: 0.6rem auto 0;
+        margin: 0.5rem auto 0;
         border: 1px solid #d8dce5;
         border-radius: 8px;
       }
@@ -213,6 +214,11 @@
     <script src="node_modules/reveal.js/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
+        width: 1280,
+        height: 720,
+        margin: 0.14,
+        minScale: 0.2,
+        maxScale: 1.05,
         hash: true,
         controls: true,
         progress: true,
