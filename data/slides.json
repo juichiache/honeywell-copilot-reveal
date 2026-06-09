@@ -12,72 +12,28 @@
     "bottomLine": "Microsoft's value was the framework, not the hand-holding. Gary is now running the pattern across two more projects on his own."
   },
   {
-    "kicker": "The Reality",
-    "title": "Copilot is used like advanced search",
+    "kicker": "The Problem",
+    "title": "Training alone leaves Copilot in search mode",
     "visual": "assets/current-way-diagram.svg",
-    "quotes": ["Most of the org treats Copilot like an advanced Google search."],
-    "bottomLine": "Copilot stays in Q&A mode when work has no durable system for Copilot to operate against."
-  },
-  {
-    "kicker": "The Adoption Gap",
-    "title": "Knowing the mechanics is not running work through it",
-    "icon": "gap",
-    "tagline": "Training teaches what Copilot can do. It does not change how engineering work is executed.",
     "quotes": [
-      "The average one does not understand agents or skills.",
+      "Most of the org treats Copilot like an advanced Google search.",
       "Agents are still confusing."
     ],
     "bottomLine": "Feature awareness is not workflow transformation."
   },
   {
-    "kicker": "Initial Ask",
-    "title": "AI to help with legacy modernization",
-    "icon": "legacy",
-    "tagline": "A real engineering problem, not an AI experiment.",
-    "points": ["ClearCase migration context", "Reduce manual effort", "Standardize execution"]
+    "kicker": "The Journey",
+    "title": "Ask \u2192 enablement \u2192 friction",
+    "visual": "assets/timeline.svg",
+    "tagline": "Legacy modernization opened the door. Workshops built vocabulary. Real artifacts exposed implementation friction.",
+    "quotes": ["At a high level this makes sense, but I am getting lost at the implementation level."]
   },
   {
-    "kicker": "Enablement and Workshops",
-    "title": "The right Microsoft motion",
-    "icon": "workshop",
-    "tagline": "We responded with valuable enablement.",
-    "points": ["Advanced Copilot training", "Prompt files + instructions", "Agents and skills", "Agentic SDLC workshop"]
-  },
-  {
-    "kicker": "What the Workshops Delivered",
-    "title": "The customer learned the mechanics",
-    "icon": "learn",
-    "tagline": "The workshops showed the art of the possible \u2014 but knowing is not doing.",
-    "points": ["Notes \u2192 requirements", "Requirements \u2192 issues", "Issues \u2192 pull requests", "Copilot across the SDLC"]
-  },
-  {
-    "kicker": "From Demo to Real Design",
-    "title": "The work became concrete",
-    "icon": "bridge",
-    "tagline": "Real artifacts and real constraints surfaced Honeywell's actual implementation problem.",
-    "bottomLine": "This was the bridge between workshop learning and execution reality."
-  },
-  {
-    "kicker": "Implementation Friction",
-    "title": "Getting lost at the implementation level",
-    "icon": "friction",
-    "quotes": ["At a high level this makes sense, but I am getting lost at the implementation level."],
-    "tagline": "Direction was understood. Execution structure was missing."
-  },
-  {
-    "kicker": "Core Insight",
-    "title": "The problem was not training. It was the missing system.",
+    "kicker": "The Insight",
+    "title": "The problem was the missing system, not the missing training",
     "icon": "insight",
-    "tagline": "Copilot needs a persistent system to work against.",
-    "points": ["Requirements need a home", "Decisions externalized", "Constraints visible", "Shared context"],
-    "bottomLine": "Copilot becomes operational when the work becomes addressable."
-  },
-  {
-    "kicker": "Thinking System Installed",
-    "title": "Spec-driven repo created",
-    "icon": "system",
-    "tagline": "Instead of more training, we installed a working system.",
-    "points": ["Decisions externalized", "Structured requirements", "Durable Copilot context"]
+    "tagline": "Copilot becomes operational when the work becomes addressable. So we installed a spec-driven repo as the thinking system.",
+    "points": ["Requirements with a home", "Decisions externalized", "Constraints visible", "Durable Copilot context"]
   },
   {
     "kicker": "What Changed",
@@ -106,54 +62,21 @@
   },
   {
     "kicker": "Business Impact",
-    "title": "This roots Microsoft AI in customer execution",
+    "title": "Microsoft AI rooted in customer execution",
     "split": {
       "leftTitle": "For Honeywell",
-      "left": ["AI guides planning", "Company context added", "Relevant questions surface", "Customer iterates alone", "Three projects in motion"],
+      "left": ["AI guides planning", "Company context added", "Customer iterates alone", "Three projects in motion"],
       "rightTitle": "For Microsoft",
       "right": ["Copilot \u2192 execution support", "Framework partner role", "Scales without us in every meeting", "Customer-led expansion"]
     },
-    "bottomLine": "The customer is not just using Copilot around the work \u2014 they are using AI to structure, question, update, and advance the work."
+    "bottomLine": "The customer is using AI to structure, question, update, and advance the work \u2014 not just around it."
   },
   {
-    "kicker": "Visual Timeline",
-    "title": "Enablement \u2192 execution \u2192 expansion",
-    "visual": "assets/timeline.svg",
-    "tagline": "Gary is already trying the pattern on two other projects."
-  },
-  {
-    "kicker": "Adoption Model",
-    "title": "Copilot adoption evolves through friction",
-    "visual": "assets/adoption-model.svg"
-  },
-  {
-    "kicker": "Reusable CSA Framework",
-    "title": "A repeatable motion emerged",
-    "visual": "assets/framework-loop.svg"
-  },
-  {
-    "kicker": "What This Means for CSA Work",
-    "title": "Stop at enablement and you stop short",
-    "split": {
-      "leftTitle": "Stop measuring",
-      "left": ["Attendance", "Prompt usage", "Feature familiarity", "Workshop completion"],
-      "rightTitle": "Start measuring",
-      "right": ["Work in repos", "Decisions captured", "Copilot in execution loops", "Patterns reused"]
-    },
-    "bottomLine": "Success metric: the team runs work through Copilot, not just beside it."
-  },
-  {
-    "kicker": "Opportunity",
+    "kicker": "Call to Action",
     "title": "Standardize this as a Microsoft engagement pattern",
     "icon": "rocket",
     "tagline": "Initial ask \u2192 enablement \u2192 real design \u2192 system install \u2192 customer-owned iteration \u2192 repeat.",
-    "points": ["Playbook", "Demo-to-design templates", "Spec-driven repo starters", "Copilot workflow guidance", "CSA coaching agent"]
-  },
-  {
-    "kicker": "Closing Insight",
-    "title": "The lesson from Honeywell",
-    "icon": "trophy",
-    "tagline": "Copilot remains advanced search until the work is externalized into a system the customer can run on their own.",
-    "points": ["Workshops \u2192 awareness", "Real design \u2192 clarity", "Thinking system \u2192 adoption", "Customer-owned \u2192 impact"]
+    "points": ["Playbook", "Spec-driven repo starters", "Copilot workflow guidance", "CSA coaching agent"],
+    "bottomLine": "Stop measuring attendance. Start measuring whether the team runs work through Copilot."
   }
 ]
