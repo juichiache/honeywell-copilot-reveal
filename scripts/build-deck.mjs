@@ -48,7 +48,7 @@ const splitHtml = (split) => {
 const beforeAfterHtml = (ba) => {
   if (!ba) return "";
   return `
-    <div class="split">
+    <div class="split ba-split">
       <div class="card before"><h4>Before</h4>${chipsHtml(ba.before || [])}</div>
       <div class="card after"><h4>After</h4>${chipsHtml(ba.after || [])}</div>
     </div>

@@ -159,8 +159,13 @@
       .card.before h4 { color: #fcd34d; }
       .card.after  { border-color: var(--success); }
       .card.after h4  { color: var(--success); }
-      .card .chips { justify-content: flex-start; margin: 0; gap: 0.25em; }
-      .card .chip  { font-size: 0.56em; padding: 0.25em 0.55em; }
+      .card .chips { justify-content: flex-start; margin: 0; gap: 0.22em; }
+      .card .chip  { font-size: 0.54em; padding: 0.22em 0.5em; }
+
+      /* Before/after split gets extra compact layout */
+      .split.ba-split { gap: 0.5em; margin: 0.2em auto; }
+      .split.ba-split .card { padding: 0.38em 0.55em; }
+      .split.ba-split .card h4 { font-size: 0.72em; margin-bottom: 0.22em; }
 
       /* Bottom line */
       .bottom-line {
@@ -211,11 +216,12 @@
 <section class="slide layout-text"><div class="kicker">What Changed</div>
 <h2>From ad hoc prompting to structured execution</h2>
 
-    <div class="split">
+    <div class="split ba-split">
       <div class="card before"><h4>Before</h4><div class="chips"><div class="chip">Ask questions</div><div class="chip">Ad hoc prompts</div><div class="chip">Re-explain context</div><div class="chip">Assistant beside work</div></div></div>
-      <div class="card after"><h4>After</h4><div class="chips"><div class="chip">Work through repo</div><div class="chip">Structured iteration</div><div class="chip">Context in system</div><div class="chip">Execution interface</div></div></div>
+      <div class="card after"><h4>After</h4><div class="chips"><div class="chip">Work through repo</div><div class="chip">Structured iteration</div><div class="chip">Context in system</div><div class="chip">Copilot-led execution</div></div></div>
     </div>
-  </section>
+  
+<div class="bottom-line"><strong>Bottom line:</strong> Same tool. Different relationship to the work.</div></section>
 <section class="slide layout-visual"><div class="kicker">Current State</div>
 <h2>Customer-owned iteration has started</h2>
 <img class="hero-svg" src="assets/customer-iteration.svg" alt="Customer-owned iteration has started" />

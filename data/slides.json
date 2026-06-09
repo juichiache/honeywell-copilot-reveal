@@ -40,8 +40,9 @@
     "title": "From ad hoc prompting to structured execution",
     "beforeAfter": {
       "before": ["Ask questions", "Ad hoc prompts", "Re-explain context", "Assistant beside work"],
-      "after": ["Work through repo", "Structured iteration", "Context in system", "Execution interface"]
-    }
+      "after": ["Work through repo", "Structured iteration", "Context in system", "Copilot-led execution"]
+    },
+    "bottomLine": "Same tool. Different relationship to the work."
   },
   {
     "kicker": "Current State",
