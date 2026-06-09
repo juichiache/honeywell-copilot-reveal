@@ -17,71 +17,74 @@
         --ink: rgba(255,255,255,0.92);
         --muted: rgba(255,255,255,0.58);
         --line: rgba(255,255,255,0.18);
-        --card-bg: rgba(255,255,255,0.06);
+        --card-bg: rgba(255,255,255,0.07);
       }
+
+      /* Scale the entire section down so all em-based sizes fit in 720px */
       .reveal .slides { text-align: center; }
       .reveal section.slide {
         box-sizing: border-box;
-        padding: 0.5rem 1.5rem 0.5rem;
+        font-size: 0.7em;       /* ~28px base; everything em-based scales with this */
+        padding: 0.5em 1.4em;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 100%;
-        max-height: 100%;
-        overflow: hidden;
       }
+
       .reveal h1, .reveal h2, .reveal h3 {
         letter-spacing: -0.02em;
         text-transform: none;
       }
       .reveal h2 {
-        margin: 0.08em 0 0.15em;
-        font-size: 1.38em;
+        margin: 0.08em 0 0.18em;
+        font-size: 1.55em;
         line-height: 1.12;
       }
       .reveal .subtitle {
-        font-size: 0.78em;
+        font-size: 0.82em;
         color: var(--muted);
         margin: 0 0 0.3em;
       }
       .reveal .tagline {
-        font-size: 0.88em;
+        font-size: 0.9em;
         color: var(--ink);
-        font-weight: 400;
-        margin: 0.25em 0 0.35em;
-        max-width: 90%;
+        margin: 0.2em 0 0.3em;
+        max-width: 92%;
         opacity: 0.9;
       }
       .kicker {
-        font-size: 0.4em;
+        font-size: 0.42em;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         opacity: 0.6;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.25em;
+        flex-shrink: 0;
       }
 
-      /* Hero visuals */
+      /* Hero SVGs — fixed px cap so they never eat too much vertical space */
       .hero-svg {
         display: block;
-        max-width: min(90%, 960px);
-        max-height: 230px;
+        max-width: 92%;
+        max-height: 200px;
         width: auto;
         height: auto;
         object-fit: contain;
-        margin: 0.3rem auto;
-        flex: 0 1 auto;
-        min-height: 0;
+        margin: 0.3em auto;
         align-self: center;
-        background: rgba(255,255,255,0.93);
+        flex-shrink: 0;
+        background: rgba(255,255,255,0.92);
         border-radius: 10px;
-        padding: 6px;
+        padding: 5px;
+        box-sizing: border-box;
       }
+
+      /* Icons */
       .hero-icon {
-        width: 110px;
-        height: 110px;
+        width: 2.8em;
+        height: 2.8em;
         color: var(--accent);
-        margin: 0.4rem auto 0.35rem;
+        margin: 0.3em auto 0.25em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,38 +96,39 @@
       .chips {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.4rem;
+        gap: 0.3em;
         justify-content: center;
-        margin: 0.35rem 0;
+        margin: 0.25em 0;
         max-width: 94%;
+        flex-shrink: 0;
       }
       .chip {
-        font-size: 0.6em;
-        padding: 0.38rem 0.78rem;
+        font-size: 0.62em;
+        padding: 0.3em 0.7em;
         background: var(--card-bg);
         border: 1px solid var(--line);
         border-radius: 999px;
         color: var(--ink);
-        line-height: 1.15;
+        line-height: 1.2;
       }
 
       /* Pull quotes */
       .quotes {
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
-        margin: 0.25rem 0;
+        gap: 0.25em;
+        margin: 0.25em 0;
         max-width: 90%;
         flex-shrink: 0;
       }
       .pull-quote {
-        font-size: 0.62em;
+        font-size: 0.65em;
         font-style: italic;
         color: var(--ink);
-        border-left: 4px solid var(--accent);
+        border-left: 3px solid var(--accent);
         background: var(--accent-soft);
-        padding: 0.38rem 0.7rem;
-        border-radius: 0 6px 6px 0;
+        padding: 0.4em 0.75em;
+        border-radius: 0 5px 5px 0;
         margin: 0;
         text-align: left;
       }
@@ -133,50 +137,50 @@
       .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
-        width: 92%;
-        margin: 0.3rem auto;
+        gap: 0.7em;
+        width: 94%;
+        margin: 0.3em auto;
         flex-shrink: 0;
       }
       .card {
         border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 0.5rem 0.7rem;
+        border-radius: 8px;
+        padding: 0.5em 0.65em;
         background: var(--card-bg);
         text-align: left;
       }
       .card h4 {
-        margin: 0 0 0.3rem;
-        font-size: 0.75em;
+        margin: 0 0 0.3em;
+        font-size: 0.76em;
         color: var(--ink);
         opacity: 0.9;
       }
       .card.before { border-color: #fbbf24; }
       .card.before h4 { color: #fcd34d; }
-      .card.after { border-color: var(--success); }
-      .card.after h4 { color: var(--success); }
-      .card .chips { justify-content: flex-start; margin: 0; gap: 0.3rem; }
-      .card .chip { font-size: 0.52em; padding: 0.28rem 0.6rem; }
+      .card.after  { border-color: var(--success); }
+      .card.after h4  { color: var(--success); }
+      .card .chips { justify-content: flex-start; margin: 0; gap: 0.25em; }
+      .card .chip  { font-size: 0.56em; padding: 0.25em 0.55em; }
 
-      /* Bottom line — always visible, never clipped */
+      /* Bottom line */
       .bottom-line {
-        margin-top: 0.3rem;
         flex-shrink: 0;
-        padding: 0.38rem 0.8rem;
-        border-left: 4px solid var(--accent);
+        margin-top: 0.35em;
+        padding: 0.38em 0.75em;
+        border-left: 3px solid var(--accent);
         background: var(--accent-soft);
-        font-size: 0.52em;
-        width: 92%;
+        font-size: 0.55em;
+        width: 94%;
         text-align: left;
-        border-radius: 0 6px 6px 0;
+        border-radius: 0 5px 5px 0;
         align-self: center;
         color: var(--ink);
       }
 
       /* Title slide */
       .title-slide { justify-content: center; }
-      .title-slide h2 { font-size: 2.1em; }
-      .title-slide .subtitle { font-size: 0.95em; }
+      .title-slide h2   { font-size: 2em; }
+      .title-slide .subtitle { font-size: 0.9em; }
     </style>
   </head>
   <body>
