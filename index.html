@@ -6,22 +6,23 @@
     <title>Honeywell Copilot Case Study</title>
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css" />
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/sky.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/league.css" />
     <style>
       :root {
         --r-main-font: "Inter", "Segoe UI", Arial, sans-serif;
         --r-heading-font: "Inter", "Segoe UI", Arial, sans-serif;
-        --accent: #2063ff;
-        --accent-soft: rgba(32, 99, 255, 0.08);
-        --success: #16a34a;
-        --ink: #0f172a;
-        --muted: #475569;
-        --line: #d8dce5;
+        --accent: #6ba3ff;
+        --accent-soft: rgba(107, 163, 255, 0.18);
+        --success: #4ade80;
+        --ink: rgba(255,255,255,0.92);
+        --muted: rgba(255,255,255,0.58);
+        --line: rgba(255,255,255,0.18);
+        --card-bg: rgba(255,255,255,0.06);
       }
       .reveal .slides { text-align: center; }
       .reveal section.slide {
         box-sizing: border-box;
-        padding: 1rem 1.6rem 1.2rem;
+        padding: 0.7rem 1.5rem 0.7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,102 +36,87 @@
         text-transform: none;
       }
       .reveal h2 {
-        margin: 0.15em 0 0.25em;
-        font-size: 1.55em;
+        margin: 0.1em 0 0.2em;
+        font-size: 1.45em;
         line-height: 1.15;
       }
       .reveal .subtitle {
-        font-size: 0.8em;
+        font-size: 0.78em;
         color: var(--muted);
-        margin: 0 0 0.4em;
+        margin: 0 0 0.3em;
       }
       .reveal .tagline {
-        font-size: 0.95em;
+        font-size: 0.88em;
         color: var(--ink);
-        font-weight: 500;
-        margin: 0.4em 0 0.5em;
+        font-weight: 400;
+        margin: 0.25em 0 0.35em;
         max-width: 90%;
+        opacity: 0.9;
       }
       .kicker {
-        font-size: 0.42em;
-        letter-spacing: 0.08em;
+        font-size: 0.4em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        opacity: 0.7;
-        margin-bottom: 0.3em;
+        opacity: 0.6;
+        margin-bottom: 0.2em;
       }
 
       /* Hero visuals */
       .hero-svg {
         display: block;
-        width: min(88%, 920px);
-        max-height: 42vh;
+        width: min(86%, 900px);
+        max-height: 36vh;
         object-fit: contain;
-        margin: 0.4rem auto;
+        margin: 0.3rem auto 0.3rem;
         flex: 0 1 auto;
         min-height: 0;
       }
       .hero-icon {
-        width: 140px;
-        height: 140px;
+        width: 110px;
+        height: 110px;
         color: var(--accent);
-        margin: 0.6rem auto 0.5rem;
+        margin: 0.4rem auto 0.35rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
       }
       .hero-icon svg { width: 100%; height: 100%; }
-      .hero-stat {
-        margin: 0.6rem auto 0.8rem;
-        text-align: center;
-      }
-      .hero-stat .stat-value {
-        font-size: 4.5em;
-        font-weight: 700;
-        color: var(--accent);
-        line-height: 1;
-      }
-      .hero-stat .stat-label {
-        font-size: 0.7em;
-        color: var(--muted);
-        margin-top: 0.3em;
-      }
 
-      /* Chips replace bullets */
+      /* Chips */
       .chips {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0.4rem;
         justify-content: center;
-        margin: 0.5rem 0;
-        max-width: 95%;
+        margin: 0.35rem 0;
+        max-width: 94%;
       }
       .chip {
-        font-size: 0.62em;
-        padding: 0.45rem 0.85rem;
-        background: #fff;
+        font-size: 0.6em;
+        padding: 0.38rem 0.78rem;
+        background: var(--card-bg);
         border: 1px solid var(--line);
         border-radius: 999px;
         color: var(--ink);
         line-height: 1.15;
       }
-      .layout-text .chips { gap: 0.6rem; }
-      .layout-text .chip { font-size: 0.72em; }
 
       /* Pull quotes */
       .quotes {
         display: flex;
         flex-direction: column;
-        gap: 0.4rem;
-        margin: 0.5rem 0;
-        max-width: 90%;
+        gap: 0.35rem;
+        margin: 0.35rem 0;
+        max-width: 88%;
       }
       .pull-quote {
-        font-size: 0.7em;
+        font-size: 0.66em;
         font-style: italic;
         color: var(--ink);
         border-left: 4px solid var(--accent);
         background: var(--accent-soft);
-        padding: 0.55rem 0.9rem;
+        padding: 0.48rem 0.8rem;
         border-radius: 0 6px 6px 0;
         margin: 0;
         text-align: left;
@@ -140,45 +126,49 @@
       .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-        width: 92%;
-        margin: 0.6rem auto;
+        gap: 1rem;
+        width: 90%;
+        margin: 0.4rem auto;
       }
       .card {
         border: 1px solid var(--line);
         border-radius: 10px;
-        padding: 0.8rem 0.9rem;
-        background: #fff;
+        padding: 0.65rem 0.8rem;
+        background: var(--card-bg);
         text-align: left;
       }
       .card h4 {
-        margin: 0 0 0.5rem;
-        font-size: 0.85em;
+        margin: 0 0 0.4rem;
+        font-size: 0.8em;
         color: var(--ink);
+        opacity: 0.9;
       }
-      .card.before { border-color: #f59e0b; }
-      .card.before h4 { color: #b45309; }
+      .card.before { border-color: #fbbf24; }
+      .card.before h4 { color: #fcd34d; }
       .card.after { border-color: var(--success); }
-      .card.after h4 { color: #15803d; }
+      .card.after h4 { color: var(--success); }
       .card .chips { justify-content: flex-start; margin: 0; }
-      .card .chip { font-size: 0.58em; }
+      .card .chip { font-size: 0.56em; }
 
+      /* Bottom line — fixed at bottom of slide, never clipped */
       .bottom-line {
-        margin-top: auto;
-        padding: 0.55rem 0.9rem;
+        margin-top: 0.4rem;
+        flex-shrink: 0;
+        padding: 0.45rem 0.85rem;
         border-left: 4px solid var(--accent);
         background: var(--accent-soft);
-        font-size: 0.6em;
-        max-width: 92%;
+        font-size: 0.56em;
+        width: 90%;
         text-align: left;
         border-radius: 0 6px 6px 0;
-        align-self: stretch;
+        align-self: center;
+        color: var(--ink);
       }
 
       /* Title slide */
       .title-slide { justify-content: center; }
-      .title-slide h2 { font-size: 2.2em; }
-      .title-slide .subtitle { font-size: 1em; }
+      .title-slide h2 { font-size: 2.1em; }
+      .title-slide .subtitle { font-size: 0.95em; }
     </style>
   </head>
   <body>
