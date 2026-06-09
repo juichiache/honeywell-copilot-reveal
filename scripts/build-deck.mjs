@@ -60,19 +60,16 @@ const beforeAfterHtml = (beforeAfter) => {
   `;
 };
 
-const visualHtmlForSlide = (slide, index) => {
+const visualHtmlForSlide = (slide) => {
   if (slide.visual) {
     return `<img class="diagram" src="${escapeHtml(slide.visual)}" alt="${escapeHtml(slide.title || "Slide visual")}" />`;
-  }
-  if (index === 1) {
-    return `<img class="diagram" src="assets/current-way-diagram.svg" alt="Fragmented workflow diagram" />`;
   }
   return "";
 };
 
 const buildSlide = (slide, index) => {
   const parts = [];
-  const hasVisual = Boolean(slide.visual || index === 1);
+  const hasVisual = Boolean(slide.visual);
   const className = hasVisual ? ' class="has-visual"' : "";
   if (slide.kicker) parts.push(`<div class="kicker">${escapeHtml(slide.kicker)}</div>`);
   if (slide.title) parts.push(`<h2>${escapeHtml(slide.title)}</h2>`);
@@ -82,7 +79,7 @@ const buildSlide = (slide, index) => {
   parts.push(listHtml(slide.bullets));
   parts.push(beforeAfterHtml(slide.beforeAfter));
   parts.push(splitBulletsHtml(slide.splitBullets));
-  parts.push(visualHtmlForSlide(slide, index));
+  parts.push(visualHtmlForSlide(slide));
   if (slide.speakerNote) parts.push(`<p class="small"><em>Speaker note: ${escapeHtml(slide.speakerNote)}</em></p>`);
   if (slide.bottomLine) parts.push(`<div class="bottom-line"><strong>Bottom line:</strong> ${escapeHtml(slide.bottomLine)}</div>`);
   return `<section${className}>${parts.filter(Boolean).join("\n")}</section>`;
