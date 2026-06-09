@@ -95,9 +95,16 @@ This plan keeps the deck clean, minimal, and narrative-first with one core visua
 3. Run `npm run serve` for local preview.
 4. Push to `main` to auto-deploy to GitHub Pages.
 
-## Visual asset backlog (next)
+## Visual assets completed
 
+- `assets/current-way-diagram.svg` (slide 2)
+- `assets/before-after.svg` (slide 11)
+- `assets/timeline.svg` (slide 14)
 - `assets/adoption-model.svg` (slide 15)
 - `assets/framework-loop.svg` (slide 16)
-- `assets/timeline.svg` (slide 14)
-- `assets/before-after.svg` (slide 11)
+
+## Next polish pass
+
+- Preview every slide locally and check text density, visual scale, and speaker flow.
+- Tighten any slide that reads like a list instead of a single executive message.
+- Confirm GitHub Pages is enabled with source set to GitHub Actions.

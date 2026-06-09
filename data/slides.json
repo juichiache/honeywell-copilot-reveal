@@ -167,74 +167,74 @@
     "bottomLine": "The customer is not just using Copilot around the work. They are using Copilot to move the work."
   },
   {
-    "title": "Honeywell Engagement Timeline - How the Way of Working Changed",
+    "title": "The Engagement Moved from Enablement to Execution",
     "kicker": "Slide 14 - Visual Timeline",
     "visual": "assets/timeline.svg",
     "bullets": [
-      "Initial Ask: AI to help with legacy modernization",
-      "Enablement and Workshops: Copilot training plus Agentic SDLC",
-      "From Demo to Real Design: artifacts, constraints, boundaries surfaced",
-      "Implementation Friction: getting lost at implementation level",
-      "Thinking System Installed: spec-driven repo created",
-      "Copilot as Operating System: iterating in repo, pattern repeatable"
+      "Legacy modernization created the opening",
+      "Copilot enablement built shared vocabulary",
+      "Workshop demos exposed what was possible",
+      "Real artifacts revealed execution friction",
+      "A spec-driven repo gave the work a home",
+      "The team began iterating through Copilot"
     ]
   },
   {
-    "title": "How Copilot Adoption Actually Evolves",
+    "title": "Copilot Adoption Evolves Through Friction",
     "kicker": "Slide 15 - Adoption Model",
     "visual": "assets/adoption-model.svg",
     "bullets": [
-      "Awareness: training, demos, capability understanding",
-      "Exploration: prompt-based usage, Q&A, code help",
-      "Friction: no durable workflow, context, or structure",
-      "System Installation: specs, decisions, repo, templates, instructions",
-      "Workflow Integration: Copilot embedded in daily execution",
-      "Scale: pattern reused across teams and projects"
+      "Awareness creates interest",
+      "Exploration proves individual utility",
+      "Friction exposes missing workflow structure",
+      "System installation makes context durable",
+      "Workflow integration changes daily execution",
+      "Scale reuses the pattern across projects"
     ]
   },
   {
-    "title": "Externalize -> Structure -> Install -> Execute -> Repeat",
+    "title": "A Repeatable CSA Motion Emerged",
     "kicker": "Slide 16 - Reusable CSA Framework",
     "visual": "assets/framework-loop.svg",
     "bullets": [
-      "Externalize: bring real artifacts, decisions, and constraints into view",
-      "Structure: turn scattered thinking into design and boundaries",
-      "Install: create a system Copilot can work against",
-      "Execute: use Copilot inside the system",
-      "Repeat: scale the pattern across projects"
+      "Externalize real artifacts, decisions, and constraints",
+      "Structure scattered thinking into design boundaries",
+      "Install a system Copilot can work against",
+      "Execute inside the system, not around it",
+      "Repeat the pattern across similar projects"
     ]
   },
   {
     "title": "We Should Not Stop at Copilot Enablement",
     "kicker": "Slide 17 - What This Means for CSA Work",
     "splitBullets": {
-      "leftTitle": "Do not stop at",
+      "leftTitle": "Stop measuring",
       "left": [
-        "Training",
-        "Demos",
-        "Isolated prompts",
-        "One-off workshops"
+        "Attendance",
+        "Prompt usage",
+        "Feature familiarity",
+        "Workshop completion"
       ],
-      "rightTitle": "Drive toward",
+      "rightTitle": "Start measuring",
       "right": [
-        "Working through real design",
-        "Thinking system setup",
-        "Structured execution surfaces",
-        "Repeatable project patterns"
+        "Work externalized into repos",
+        "Decisions captured in system",
+        "Copilot used in execution loops",
+        "Patterns reused by teams"
       ]
     },
-    "bottomLine": "Success metric: not they learned Copilot, but they now run work through Copilot."
+    "bottomLine": "Success metric: the team runs work through Copilot, not just beside it."
   },
   {
     "title": "Standardize This as a Microsoft Engagement Pattern",
     "kicker": "Slide 18 - Opportunity",
     "bullets": [
-      "Engagement playbook",
-      "From Demo to Real Design templates",
-      "Spec-driven repo starters",
-      "GitHub Copilot workflow guidance",
-      "Thinking-system templates",
-      "CSA coaching agent"
+      "Package the motion as a repeatable engagement playbook",
+      "Create templates for moving from demo to real design",
+      "Provide spec-driven repo starters",
+      "Standardize GitHub Copilot workflow guidance",
+      "Build thinking-system templates for common scenarios",
+      "Use a CSA coaching agent to reinforce the pattern"
     ],
     "bottomLine": "Motion: initial ask -> enablement -> real design -> system installation -> Copilot-led execution -> repeat."
   },
