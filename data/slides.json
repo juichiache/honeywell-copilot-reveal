@@ -89,37 +89,5 @@
     "tagline": "Initial ask \u2192 enablement \u2192 real design \u2192 system install \u2192 customer-owned iteration \u2192 repeat.",
     "points": ["Playbook", "Spec-driven repo starters", "Copilot workflow guidance", "Engagement Thinking Coach"],
     "bottomLine": "Stop measuring attendance. Start measuring whether the team runs work through Copilot."
-  },
-  {
-    "kicker": "What Honeywell Taught Us",
-    "title": "Why Adoption Stalls \u2014 and How to Change the Motion",
-    "lessons": [
-      {
-        "learned": "Customers get stuck below the concept layer",
-        "change": "Run design sessions as decision-conversion sessions. Capture: decision, owner, rationale, constraint, next test.",
-        "example": "Decision needed: migration unit = app/module/component; owner = Gary; test = apply to one real build path."
-      },
-      {
-        "learned": "Workshops teach mechanics but don't change behavior",
-        "change": "End every workshop with a working surface, not slides: repo, spec, prompt files, decision log, next tasks.",
-        "example": "After Agentic SDLC workshop, leave a repo where Copilot can generate issues from the real Honeywell spec."
-      },
-      {
-        "learned": "Adoption stalls when Copilot has no system to work against",
-        "change": "Build a Copilot-addressable project system: specs, constraints, decisions, open questions, task paths.",
-        "example": "Copilot reads the spec repo and asks specific questions about build artifacts instead of giving generic advice."
-      },
-      {
-        "learned": "Meetings repeat because context is fragmented",
-        "change": "Start each follow-up from the system: what changed, what is open, what was decided. Update it live.",
-        "example": "Last time we decided X, left Y open, need to resolve Z today. Update the repo during the call."
-      },
-      {
-        "learned": "Microsoft becomes the clarification path",
-        "change": "Coach the customer to query, update, and improve the system themselves. Success = customer self-service.",
-        "example": "Gary updates planning in the repo via Copilot, then starts two more projects without needing Microsoft."
-      }
-    ],
-    "bottomLine": "The change is not fewer design sessions. It is changing design sessions from advice delivery into system-building."
   }
 ]
