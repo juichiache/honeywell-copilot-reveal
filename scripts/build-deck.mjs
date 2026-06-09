@@ -72,6 +72,8 @@ const visualHtmlForSlide = (slide, index) => {
 
 const buildSlide = (slide, index) => {
   const parts = [];
+  const hasVisual = Boolean(slide.visual || index === 1);
+  const className = hasVisual ? ' class="has-visual"' : "";
   if (slide.kicker) parts.push(`<div class="kicker">${escapeHtml(slide.kicker)}</div>`);
   if (slide.title) parts.push(`<h2>${escapeHtml(slide.title)}</h2>`);
   if (slide.subtitle) parts.push(`<p>${escapeHtml(slide.subtitle)}</p>`);
@@ -83,7 +85,7 @@ const buildSlide = (slide, index) => {
   parts.push(visualHtmlForSlide(slide, index));
   if (slide.speakerNote) parts.push(`<p class="small"><em>Speaker note: ${escapeHtml(slide.speakerNote)}</em></p>`);
   if (slide.bottomLine) parts.push(`<div class="bottom-line"><strong>Bottom line:</strong> ${escapeHtml(slide.bottomLine)}</div>`);
-  return `<section>${parts.filter(Boolean).join("\n")}</section>`;
+  return `<section${className}>${parts.filter(Boolean).join("\n")}</section>`;
 };
 
 const run = async () => {

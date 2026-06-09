@@ -15,11 +15,36 @@
       .reveal .slides {
         text-align: left;
       }
+      .reveal section {
+        box-sizing: border-box;
+      }
       .reveal h1,
       .reveal h2,
       .reveal h3 {
         letter-spacing: -0.02em;
         text-transform: none;
+      }
+      .reveal h2 {
+        margin-bottom: 0.35em;
+      }
+      .reveal p,
+      .reveal ul,
+      .reveal blockquote {
+        margin-top: 0.45em;
+        margin-bottom: 0.45em;
+      }
+      .reveal li {
+        margin: 0.12em 0;
+      }
+      .reveal section.has-visual {
+        font-size: 0.82em;
+      }
+      .reveal section.has-visual h2 {
+        font-size: 1.45em;
+      }
+      .reveal section.has-visual ul {
+        font-size: 0.74em;
+        line-height: 1.22;
       }
       .kicker {
         font-size: 0.48em;
@@ -49,9 +74,18 @@
         font-size: 0.72em;
       }
       .diagram {
-        width: 100%;
+        display: block;
+        width: min(100%, 820px);
+        max-height: 38vh;
+        object-fit: contain;
+        margin: 0.6rem auto 0;
         border: 1px solid #d8dce5;
-        border-radius: 12px;
+        border-radius: 8px;
+      }
+      .has-visual .bottom-line {
+        font-size: 0.62em;
+        margin-top: 0.55rem;
+        padding: 0.55rem 0.75rem;
       }
     </style>
   </head>
