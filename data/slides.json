@@ -15,11 +15,11 @@
     "kicker": "The Problem",
     "title": "Training alone leaves Copilot in search mode",
     "visual": "assets/current-way-diagram.svg",
-    "tagline": "Only 23% of Honeywell PRs use Copilot review. Copilot is deployed — not yet operational.",
+    "tagline": "$10M initiative. 1+ year timeline. Complex legacy code, heavy manual work — and Copilot sitting in search mode.",
     "quotes": [
       "Most of the org treats Copilot like an advanced Google search."
     ],
-    "bottomLine": "Feature awareness is not workflow transformation."
+    "bottomLine": "Only 23% of PRs use Copilot review. Copilot is deployed — not yet operational."
   },
   {
     "kicker": "The Journey",
@@ -45,7 +45,7 @@
     "kicker": "Current State",
     "title": "Customer-owned iteration has started",
     "visual": "assets/customer-iteration.svg",
-    "tagline": "Gary \u2014 Honeywell Engineering Lead \u2014 now drives iteration through the repo without Microsoft in every step.",
+    "tagline": "Gary, Senior Software Engineer Leader driving Honeywell\u2019s $10M legacy migration, now iterates through the repo without Microsoft in every step.",
     "quotes": [
       "AI is walking me through the process it wants with respect to details."
     ]
@@ -75,11 +75,11 @@
     "title": "Microsoft AI rooted in customer execution",
     "split": {
       "leftTitle": "For Honeywell",
-      "left": ["AI guides planning", "Company context added", "Customer iterates alone", "Pattern spreading across projects"],
+      "left": ["$10M initiative, 1+ yr timeline", "Tracy (Sr Eng Manager): \u201cIf this succeeds, we save millions\u201d", "Customer iterates without Microsoft", "Pattern spreading across projects"],
       "rightTitle": "For Microsoft",
       "right": ["$303.6K ACR YTD \u00b7 $71K/mo run-rate", "5,478-seat opp scored 77/100", "Framework scales without us", "Customer-led expansion"]
     },
-    "bottomLine": "The customer is using AI to structure, question, update, and advance the work \u2014 not just around it."
+    "bottomLine": "Tracy\u2019s bet is already paying off: AI is structuring, questioning, and advancing the $10M migration \u2014 not just assisting it."
   },
   {
     "kicker": "Call to Action",
