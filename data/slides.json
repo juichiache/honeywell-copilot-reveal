@@ -7,15 +7,16 @@
   },
   {
     "kicker": "Leadership Summary",
-    "title": "From \"AI could help\" to customer-owned iteration",
+    "title": "From adoption to execution",
     "visual": "assets/leadership-arc.svg",
-    "bottomLine": "Microsoft's value was the framework, not the hand-holding. Gary is now running the pattern across two more projects on his own."
+    "tagline": "58.6% of Honeywell seats are active. $303.6K ACR YTD. But only 23% of PRs use Copilot review — deployed, not operational.",
+    "bottomLine": "Gary (Sr. Software Engineer Leader) and Tracy (Sr. Engineering Manager, exec sponsor) are already running the fix. This is how we scaled it."
   },
   {
-    "kicker": "The Problem",
-    "title": "Training alone leaves Copilot in search mode",
+    "kicker": "The Stakes",
+    "title": "$10M migration. Copilot in search mode.",
     "visual": "assets/current-way-diagram.svg",
-    "tagline": "$10M initiative. 1+ year timeline. Complex legacy code, heavy manual work — and Copilot sitting in search mode.",
+    "tagline": "$10M initiative. 1+ year timeline. Complex legacy code, heavy manual work. Tracy: \"If this succeeds, we can save millions.\"",
     "quotes": [
       "Most of the org treats Copilot like an advanced Google search."
     ],
@@ -45,17 +46,10 @@
     "kicker": "Current State",
     "title": "Customer-owned iteration has started",
     "visual": "assets/customer-iteration.svg",
-    "tagline": "Gary, Senior Software Engineer Leader driving Honeywell\u2019s $10M legacy migration, now iterates through the repo without Microsoft in every step.",
+    "tagline": "Gary \u2014 Senior Software Engineer Leader on the $10M migration \u2014 now drives iteration through the repo without Microsoft in every step.",
     "quotes": [
       "AI is walking me through the process it wants with respect to details."
     ]
-  },
-  {
-    "kicker": "Expansion Signal",
-    "title": "The pattern is already spreading",
-    "visual": "assets/expansion-signal.svg",
-    "tagline": "One project became the template. Gary applied it independently to two more Honeywell initiatives.",
-    "bottomLine": "Expansion probability scored 77/100 \u2014 5,478-seat opportunity already in motion."
   },
   {
     "kicker": "The Proof",
@@ -71,15 +65,22 @@
     "source": "Honeywell Copilot usage report, May 2026"
   },
   {
+    "kicker": "Expansion Signal",
+    "title": "The pattern is already spreading",
+    "visual": "assets/expansion-signal.svg",
+    "tagline": "One project became the template. Gary applied it independently to two more Honeywell initiatives \u2014 without Microsoft support.",
+    "bottomLine": "What started as a one-project artifact is now a repeatable way of working."
+  },
+  {
     "kicker": "Business Impact",
     "title": "Microsoft AI rooted in customer execution",
     "split": {
       "leftTitle": "For Honeywell",
-      "left": ["$10M initiative, 1+ yr timeline", "Tracy (Sr Eng Manager): \u201cIf this succeeds, we save millions\u201d", "Customer iterates without Microsoft", "Pattern spreading across projects"],
+      "left": ["$10M initiative, 1+ yr timeline", "Tracy: save millions if this scales", "Customer iterates without Microsoft", "Pattern spreading across projects"],
       "rightTitle": "For Microsoft",
       "right": ["$303.6K ACR YTD \u00b7 $71K/mo run-rate", "5,478-seat opp scored 77/100", "Framework scales without us", "Customer-led expansion"]
     },
-    "bottomLine": "Tracy\u2019s bet is already paying off: AI is structuring, questioning, and advancing the $10M migration \u2014 not just assisting it."
+    "bottomLine": "Tracy's sponsorship is already paying off: AI is structuring, questioning, and advancing the $10M migration \u2014 not just assisting it."
   },
   {
     "kicker": "Call to Action",
@@ -96,7 +97,7 @@
       {
         "learned": "Customers get stuck below the concept layer",
         "change": "Run design sessions as decision-conversion sessions. Capture: decision, owner, rationale, constraint, next test.",
-        "example": "\"Decision needed: migration unit = app/module/component; owner = Gary; test = apply to one real build path.\""
+        "example": "Decision needed: migration unit = app/module/component; owner = Gary; test = apply to one real build path."
       },
       {
         "learned": "Workshops teach mechanics but don't change behavior",
@@ -111,7 +112,7 @@
       {
         "learned": "Meetings repeat because context is fragmented",
         "change": "Start each follow-up from the system: what changed, what is open, what was decided. Update it live.",
-        "example": "\"Last time we decided X, left Y open, need to resolve Z today.\" Update the repo during the call."
+        "example": "Last time we decided X, left Y open, need to resolve Z today. Update the repo during the call."
       },
       {
         "learned": "Microsoft becomes the clarification path",
@@ -122,5 +123,3 @@
     "bottomLine": "The change is not fewer design sessions. It is changing design sessions from advice delivery into system-building."
   }
 ]
-
-  
