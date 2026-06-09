@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { icons } from "./icons.mjs";
 
 const root = process.cwd();
 const templatePath = path.join(root, "src", "template.html");
@@ -14,75 +15,81 @@ const escapeHtml = (value = "") =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
 
-const listHtml = (items = []) => {
-  if (!items.length) return "";
-  return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+const chipsHtml = (points = []) => {
+  if (!points.length) return "";
+  return `<div class="chips">${points
+    .map((p) => `<div class="chip">${escapeHtml(p)}</div>`)
+    .join("")}</div>`;
 };
 
 const quoteHtml = (quotes = []) => {
   if (!quotes.length) return "";
-  return quotes
-    .map(
-      (quote) => `<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">${escapeHtml(quote)}</blockquote>`
-    )
-    .join("");
+  return `<div class="quotes">${quotes
+    .map((q) => `<blockquote class="pull-quote">${escapeHtml(q)}</blockquote>`)
+    .join("")}</div>`;
 };
 
-const splitBulletsHtml = (splitBullets) => {
-  if (!splitBullets) return "";
+const splitHtml = (split) => {
+  if (!split) return "";
   return `
-    <div class="split small">
+    <div class="split">
       <div class="card">
-        <h4>${escapeHtml(splitBullets.leftTitle || "Left")}</h4>
-        ${listHtml(splitBullets.left || [])}
+        <h4>${escapeHtml(split.leftTitle || "")}</h4>
+        ${chipsHtml(split.left || [])}
       </div>
       <div class="card">
-        <h4>${escapeHtml(splitBullets.rightTitle || "Right")}</h4>
-        ${listHtml(splitBullets.right || [])}
+        <h4>${escapeHtml(split.rightTitle || "")}</h4>
+        ${chipsHtml(split.right || [])}
       </div>
     </div>
   `;
 };
 
-const beforeAfterHtml = (beforeAfter) => {
-  if (!beforeAfter) return "";
+const beforeAfterHtml = (ba) => {
+  if (!ba) return "";
   return `
-    <div class="split small">
-      <div class="card">
-        <h4>Before</h4>
-        ${listHtml(beforeAfter.before || [])}
-      </div>
-      <div class="card">
-        <h4>After</h4>
-        ${listHtml(beforeAfter.after || [])}
-      </div>
+    <div class="split">
+      <div class="card before"><h4>Before</h4>${chipsHtml(ba.before || [])}</div>
+      <div class="card after"><h4>After</h4>${chipsHtml(ba.after || [])}</div>
     </div>
   `;
 };
 
-const visualHtmlForSlide = (slide) => {
+const heroHtml = (slide) => {
   if (slide.visual) {
-    return `<img class="diagram" src="${escapeHtml(slide.visual)}" alt="${escapeHtml(slide.title || "Slide visual")}" />`;
+    return `<img class="hero-svg" src="${escapeHtml(slide.visual)}" alt="${escapeHtml(slide.title || "Slide visual")}" />`;
+  }
+  if (slide.icon && icons[slide.icon]) {
+    return `<div class="hero-icon">${icons[slide.icon]}</div>`;
+  }
+  if (slide.bigStat) {
+    return `<div class="hero-stat"><div class="stat-value">${escapeHtml(slide.bigStat.value)}</div><div class="stat-label">${escapeHtml(slide.bigStat.label)}</div></div>`;
   }
   return "";
 };
 
-const buildSlide = (slide, index) => {
+const buildSlide = (slide) => {
   const parts = [];
-  const hasVisual = Boolean(slide.visual);
-  const className = hasVisual ? ' class="has-visual"' : "";
+  const layout = slide.layout || (slide.visual ? "visual" : slide.icon ? "icon" : "text");
+  const classes = ["slide", `layout-${layout}`];
+  if (slide.titleOnly) classes.push("title-slide");
+
   if (slide.kicker) parts.push(`<div class="kicker">${escapeHtml(slide.kicker)}</div>`);
   if (slide.title) parts.push(`<h2>${escapeHtml(slide.title)}</h2>`);
-  if (slide.subtitle) parts.push(`<p>${escapeHtml(slide.subtitle)}</p>`);
-  if (slide.keyMessage) parts.push(`<p><strong>Key message:</strong> ${escapeHtml(slide.keyMessage)}</p>`);
-  parts.push(quoteHtml(slide.quotes));
-  parts.push(listHtml(slide.bullets));
+  if (slide.subtitle) parts.push(`<p class="subtitle">${escapeHtml(slide.subtitle)}</p>`);
+
+  const hero = heroHtml(slide);
+  if (hero) parts.push(hero);
+
+  if (slide.tagline) parts.push(`<p class="tagline">${escapeHtml(slide.tagline)}</p>`);
+  parts.push(chipsHtml(slide.points));
   parts.push(beforeAfterHtml(slide.beforeAfter));
-  parts.push(splitBulletsHtml(slide.splitBullets));
-  parts.push(visualHtmlForSlide(slide));
-  if (slide.speakerNote) parts.push(`<p class="small"><em>Speaker note: ${escapeHtml(slide.speakerNote)}</em></p>`);
+  parts.push(splitHtml(slide.split));
+  parts.push(quoteHtml(slide.quotes));
+
   if (slide.bottomLine) parts.push(`<div class="bottom-line"><strong>Bottom line:</strong> ${escapeHtml(slide.bottomLine)}</div>`);
-  return `<section${className}>${parts.filter(Boolean).join("\n")}</section>`;
+
+  return `<section class="${classes.join(" ")}">${parts.filter(Boolean).join("\n")}</section>`;
 };
 
 const run = async () => {
@@ -92,7 +99,7 @@ const run = async () => {
   ]);
 
   const slides = JSON.parse(rawSlides);
-  const slideSections = slides.map((slide, index) => buildSlide(slide, index)).join("\n");
+  const slideSections = slides.map(buildSlide).join("\n");
   const html = template.replace("%%SLIDES%%", slideSections);
 
   await fs.writeFile(outputPath, html, "utf8");

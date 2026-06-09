@@ -1,0 +1,38 @@
+<svg width="1600" height="760" viewBox="0 0 1600 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="760" fill="#F8FAFC"/>
+  <text x="800" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#0F172A">The pattern is already spreading</text>
+  <text x="800" y="108" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#475569">One framework. One repeatable pattern. Three projects in motion.</text>
+
+  <g>
+    <rect x="220" y="280" width="280" height="200" rx="16" fill="#FFFFFF" stroke="#2063FF" stroke-width="4"/>
+    <text x="360" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Project 1</text>
+    <text x="360" y="384" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#475569">Legacy modernization</text>
+    <text x="360" y="430" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">Customer-owned</text>
+    <text x="360" y="454" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">iteration in flight</text>
+  </g>
+
+  <g>
+    <rect x="640" y="280" width="280" height="200" rx="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="4" stroke-dasharray="10 6"/>
+    <text x="780" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Project 2</text>
+    <text x="780" y="384" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#475569">Gary's next task</text>
+    <text x="780" y="430" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">Starting with the</text>
+    <text x="780" y="454" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">same framework</text>
+  </g>
+
+  <g>
+    <rect x="1060" y="280" width="280" height="200" rx="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="4" stroke-dasharray="10 6"/>
+    <text x="1200" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Project 3</text>
+    <text x="1200" y="384" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#475569">Gary's next task</text>
+    <text x="1200" y="430" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">Starting with the</text>
+    <text x="1200" y="454" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#16A34A" font-weight="600">same framework</text>
+  </g>
+
+  <path d="M500 380 L 640 380" stroke="#16A34A" stroke-width="4"/>
+  <polygon points="640,380 622,374 622,386" fill="#16A34A"/>
+  <path d="M920 380 L 1060 380" stroke="#16A34A" stroke-width="4"/>
+  <polygon points="1060,380 1042,374 1042,386" fill="#16A34A"/>
+
+  <rect x="240" y="580" width="1120" height="110" rx="14" fill="#ECFDF5" stroke="#16A34A" stroke-width="2"/>
+  <text x="800" y="624" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-style="italic" fill="#065F46">"I've been impressed enough to try and create two other projects."</text>
+  <text x="800" y="660" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-style="italic" fill="#065F46">"At this time, I don't see anything I need your support for."</text>
+</svg>

@@ -11,83 +11,170 @@
       :root {
         --r-main-font: "Inter", "Segoe UI", Arial, sans-serif;
         --r-heading-font: "Inter", "Segoe UI", Arial, sans-serif;
+        --accent: #2063ff;
+        --accent-soft: rgba(32, 99, 255, 0.08);
+        --success: #16a34a;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #d8dce5;
       }
-      .reveal .slides {
-        text-align: left;
-      }
-      .reveal section {
+      .reveal .slides { text-align: center; }
+      .reveal section.slide {
         box-sizing: border-box;
-        padding: 1.1rem 1.35rem;
+        padding: 0.6rem 1.2rem 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
       }
-      .reveal h1,
-      .reveal h2,
-      .reveal h3 {
+      .reveal h1, .reveal h2, .reveal h3 {
         letter-spacing: -0.02em;
         text-transform: none;
       }
       .reveal h2 {
-        margin-bottom: 0.35em;
+        margin: 0.15em 0 0.25em;
+        font-size: 1.55em;
+        line-height: 1.15;
       }
-      .reveal p,
-      .reveal ul,
-      .reveal blockquote {
-        margin-top: 0.45em;
-        margin-bottom: 0.45em;
+      .reveal .subtitle {
+        font-size: 0.8em;
+        color: var(--muted);
+        margin: 0 0 0.4em;
       }
-      .reveal li {
-        margin: 0.12em 0;
-      }
-      .reveal section.has-visual {
-        font-size: 0.76em;
-      }
-      .reveal section.has-visual h2 {
-        font-size: 1.36em;
-      }
-      .reveal section.has-visual ul {
-        font-size: 0.7em;
-        line-height: 1.18;
+      .reveal .tagline {
+        font-size: 0.95em;
+        color: var(--ink);
+        font-weight: 500;
+        margin: 0.4em 0 0.5em;
+        max-width: 90%;
       }
       .kicker {
-        font-size: 0.48em;
+        font-size: 0.42em;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        opacity: 0.75;
+        opacity: 0.7;
+        margin-bottom: 0.3em;
       }
-      .bottom-line {
-        margin-top: 1rem;
-        padding: 0.8rem 1rem;
-        border-left: 4px solid #2063ff;
-        background: rgba(32, 99, 255, 0.08);
-        font-size: 0.72em;
+
+      /* Hero visuals */
+      .hero-svg {
+        display: block;
+        width: min(94%, 980px);
+        max-height: 46vh;
+        object-fit: contain;
+        margin: 0.4rem auto;
       }
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+        color: var(--accent);
+        margin: 0.6rem auto 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-icon svg { width: 100%; height: 100%; }
+      .hero-stat {
+        margin: 0.6rem auto 0.8rem;
+        text-align: center;
+      }
+      .hero-stat .stat-value {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: var(--accent);
+        line-height: 1;
+      }
+      .hero-stat .stat-label {
+        font-size: 0.7em;
+        color: var(--muted);
+        margin-top: 0.3em;
+      }
+
+      /* Chips replace bullets */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin: 0.5rem 0;
+        max-width: 95%;
+      }
+      .chip {
+        font-size: 0.62em;
+        padding: 0.45rem 0.85rem;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--ink);
+        line-height: 1.15;
+      }
+      .layout-text .chips { gap: 0.6rem; }
+      .layout-text .chip { font-size: 0.72em; }
+
+      /* Pull quotes */
+      .quotes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 0.5rem 0;
+        max-width: 90%;
+      }
+      .pull-quote {
+        font-size: 0.7em;
+        font-style: italic;
+        color: var(--ink);
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        padding: 0.55rem 0.9rem;
+        border-radius: 0 6px 6px 0;
+        margin: 0;
+        text-align: left;
+      }
+
+      /* Split / cards */
       .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
+        gap: 1.2rem;
+        width: 92%;
+        margin: 0.6rem auto;
       }
       .card {
-        border: 1px solid #d8dce5;
-        border-radius: 8px;
-        padding: 0.8rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 0.8rem 0.9rem;
         background: #fff;
+        text-align: left;
       }
-      .small {
-        font-size: 0.72em;
+      .card h4 {
+        margin: 0 0 0.5rem;
+        font-size: 0.85em;
+        color: var(--ink);
       }
-      .diagram {
-        display: block;
-        width: min(92%, 720px);
-        max-height: 32vh;
-        object-fit: contain;
-        margin: 0.5rem auto 0;
-        border: 1px solid #d8dce5;
-        border-radius: 8px;
+      .card.before { border-color: #f59e0b; }
+      .card.before h4 { color: #b45309; }
+      .card.after { border-color: var(--success); }
+      .card.after h4 { color: #15803d; }
+      .card .chips { justify-content: flex-start; margin: 0; }
+      .card .chip { font-size: 0.58em; }
+
+      .bottom-line {
+        margin-top: auto;
+        padding: 0.55rem 0.9rem;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        font-size: 0.6em;
+        max-width: 92%;
+        text-align: left;
+        border-radius: 0 6px 6px 0;
+        align-self: stretch;
       }
-      .has-visual .bottom-line {
-        font-size: 0.62em;
-        margin-top: 0.55rem;
-        padding: 0.55rem 0.75rem;
-      }
+
+      /* Title slide */
+      .title-slide { justify-content: center; }
+      .title-slide h2 { font-size: 2.2em; }
+      .title-slide .subtitle { font-size: 1em; }
     </style>
   </head>
   <body>
@@ -101,7 +188,7 @@
       Reveal.initialize({
         width: 1280,
         height: 720,
-        margin: 0.14,
+        margin: 0.08,
         minScale: 0.2,
         maxScale: 1.05,
         hash: true,

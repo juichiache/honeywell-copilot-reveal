@@ -11,217 +11,297 @@
       :root {
         --r-main-font: "Inter", "Segoe UI", Arial, sans-serif;
         --r-heading-font: "Inter", "Segoe UI", Arial, sans-serif;
+        --accent: #2063ff;
+        --accent-soft: rgba(32, 99, 255, 0.08);
+        --success: #16a34a;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #d8dce5;
       }
-      .reveal .slides {
-        text-align: left;
-      }
-      .reveal section {
+      .reveal .slides { text-align: center; }
+      .reveal section.slide {
         box-sizing: border-box;
-        padding: 1.1rem 1.35rem;
+        padding: 0.6rem 1.2rem 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
       }
-      .reveal h1,
-      .reveal h2,
-      .reveal h3 {
+      .reveal h1, .reveal h2, .reveal h3 {
         letter-spacing: -0.02em;
         text-transform: none;
       }
       .reveal h2 {
-        margin-bottom: 0.35em;
+        margin: 0.15em 0 0.25em;
+        font-size: 1.55em;
+        line-height: 1.15;
       }
-      .reveal p,
-      .reveal ul,
-      .reveal blockquote {
-        margin-top: 0.45em;
-        margin-bottom: 0.45em;
+      .reveal .subtitle {
+        font-size: 0.8em;
+        color: var(--muted);
+        margin: 0 0 0.4em;
       }
-      .reveal li {
-        margin: 0.12em 0;
-      }
-      .reveal section.has-visual {
-        font-size: 0.76em;
-      }
-      .reveal section.has-visual h2 {
-        font-size: 1.36em;
-      }
-      .reveal section.has-visual ul {
-        font-size: 0.7em;
-        line-height: 1.18;
+      .reveal .tagline {
+        font-size: 0.95em;
+        color: var(--ink);
+        font-weight: 500;
+        margin: 0.4em 0 0.5em;
+        max-width: 90%;
       }
       .kicker {
-        font-size: 0.48em;
+        font-size: 0.42em;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        opacity: 0.75;
+        opacity: 0.7;
+        margin-bottom: 0.3em;
       }
-      .bottom-line {
-        margin-top: 1rem;
-        padding: 0.8rem 1rem;
-        border-left: 4px solid #2063ff;
-        background: rgba(32, 99, 255, 0.08);
-        font-size: 0.72em;
+
+      /* Hero visuals */
+      .hero-svg {
+        display: block;
+        width: min(94%, 980px);
+        max-height: 46vh;
+        object-fit: contain;
+        margin: 0.4rem auto;
       }
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+        color: var(--accent);
+        margin: 0.6rem auto 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-icon svg { width: 100%; height: 100%; }
+      .hero-stat {
+        margin: 0.6rem auto 0.8rem;
+        text-align: center;
+      }
+      .hero-stat .stat-value {
+        font-size: 4.5em;
+        font-weight: 700;
+        color: var(--accent);
+        line-height: 1;
+      }
+      .hero-stat .stat-label {
+        font-size: 0.7em;
+        color: var(--muted);
+        margin-top: 0.3em;
+      }
+
+      /* Chips replace bullets */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin: 0.5rem 0;
+        max-width: 95%;
+      }
+      .chip {
+        font-size: 0.62em;
+        padding: 0.45rem 0.85rem;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--ink);
+        line-height: 1.15;
+      }
+      .layout-text .chips { gap: 0.6rem; }
+      .layout-text .chip { font-size: 0.72em; }
+
+      /* Pull quotes */
+      .quotes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 0.5rem 0;
+        max-width: 90%;
+      }
+      .pull-quote {
+        font-size: 0.7em;
+        font-style: italic;
+        color: var(--ink);
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        padding: 0.55rem 0.9rem;
+        border-radius: 0 6px 6px 0;
+        margin: 0;
+        text-align: left;
+      }
+
+      /* Split / cards */
       .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
+        gap: 1.2rem;
+        width: 92%;
+        margin: 0.6rem auto;
       }
       .card {
-        border: 1px solid #d8dce5;
-        border-radius: 8px;
-        padding: 0.8rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 0.8rem 0.9rem;
         background: #fff;
+        text-align: left;
       }
-      .small {
-        font-size: 0.72em;
+      .card h4 {
+        margin: 0 0 0.5rem;
+        font-size: 0.85em;
+        color: var(--ink);
       }
-      .diagram {
-        display: block;
-        width: min(92%, 720px);
-        max-height: 32vh;
-        object-fit: contain;
-        margin: 0.5rem auto 0;
-        border: 1px solid #d8dce5;
-        border-radius: 8px;
+      .card.before { border-color: #f59e0b; }
+      .card.before h4 { color: #b45309; }
+      .card.after { border-color: var(--success); }
+      .card.after h4 { color: #15803d; }
+      .card .chips { justify-content: flex-start; margin: 0; }
+      .card .chip { font-size: 0.58em; }
+
+      .bottom-line {
+        margin-top: auto;
+        padding: 0.55rem 0.9rem;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        font-size: 0.6em;
+        max-width: 92%;
+        text-align: left;
+        border-radius: 0 6px 6px 0;
+        align-self: stretch;
       }
-      .has-visual .bottom-line {
-        font-size: 0.62em;
-        margin-top: 0.55rem;
-        padding: 0.55rem 0.75rem;
-      }
+
+      /* Title slide */
+      .title-slide { justify-content: center; }
+      .title-slide h2 { font-size: 2.2em; }
+      .title-slide .subtitle { font-size: 1em; }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section><div class="kicker">Slide 1 - Title</div>
-<h2>Case Study: Why Copilot Stays in Search Mode</h2>
-<p>Honeywell: From Copilot training to customer-owned AI-assisted iteration</p></section>
-<section><div class="kicker">Slide 2 - Leadership Framing</div>
-<h2>Leadership Summary</h2>
-<p><strong>Key message:</strong> Honeywell moved from &quot;AI could help with modernization&quot; to customer-owned AI-assisted planning and iteration.</p>
-<ul><li>Started with: AI to help with legacy modernization</li><li>Microsoft delivered: Copilot training and Agentic SDLC workshops</li><li>Real work surfaced implementation friction the training did not solve</li><li>We installed a spec-driven thinking system Copilot could operate against</li><li>Customer now runs planning and iteration through AI on their own</li><li>Strongest proof: Gary is applying the pattern to two more projects without Microsoft support</li></ul>
-<div class="bottom-line"><strong>Bottom line:</strong> Microsoft&#39;s value was the framework, not the hand-holding.</div></section>
-<section class="has-visual"><div class="kicker">Slide 3 - The Reality</div>
-<h2>Senior Engineers Still Use Copilot Like Advanced Search</h2>
-<p><strong>Key message:</strong> The default state of Copilot adoption is search mode.</p>
-<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">Most of the org treats Copilot like an advanced Google search.</blockquote>
-<img class="diagram" src="assets/current-way-diagram.svg" alt="Senior Engineers Still Use Copilot Like Advanced Search" />
+        <section class="slide layout-text title-slide"><div class="kicker">Case Study</div>
+<h2>Why Copilot Stays in Search Mode</h2>
+<p class="subtitle">Honeywell: from Copilot training to customer-owned AI-assisted iteration</p></section>
+<section class="slide layout-visual"><div class="kicker">Leadership Summary</div>
+<h2>From &quot;AI could help&quot; to customer-owned iteration</h2>
+<img class="hero-svg" src="assets/leadership-arc.svg" alt="From &quot;AI could help&quot; to customer-owned iteration" />
+<div class="bottom-line"><strong>Bottom line:</strong> Microsoft&#39;s value was the framework, not the hand-holding. Gary is now running the pattern across two more projects on his own.</div></section>
+<section class="slide layout-visual"><div class="kicker">The Reality</div>
+<h2>Copilot is used like advanced search</h2>
+<img class="hero-svg" src="assets/current-way-diagram.svg" alt="Copilot is used like advanced search" />
+<div class="quotes"><blockquote class="pull-quote">Most of the org treats Copilot like an advanced Google search.</blockquote></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Copilot stays in Q&amp;A mode when work has no durable system for Copilot to operate against.</div></section>
-<section><div class="kicker">Slide 4 - The Adoption Gap</div>
-<h2>Knowing the Mechanics != Running Work Through Copilot</h2>
-<p><strong>Key message:</strong> Training can teach what Copilot can do, but it does not automatically change how engineering work is executed.</p>
-<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">The average one does not understand agents or skills.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">Agents are still confusing.</blockquote>
+<section class="slide layout-icon"><div class="kicker">The Adoption Gap</div>
+<h2>Knowing the mechanics is not running work through it</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="22" width="20" height="20" rx="3" stroke="currentColor" stroke-width="4"/><rect x="38" y="22" width="20" height="20" rx="3" stroke="currentColor" stroke-width="4"/><path d="M28 32 L36 32" stroke="currentColor" stroke-width="4" stroke-dasharray="3 3"/></svg></div>
+<p class="tagline">Training teaches what Copilot can do. It does not change how engineering work is executed.</p>
+<div class="quotes"><blockquote class="pull-quote">The average one does not understand agents or skills.</blockquote><blockquote class="pull-quote">Agents are still confusing.</blockquote></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Feature awareness is not workflow transformation.</div></section>
-<section><div class="kicker">Slide 5 - Initial Ask</div>
-<h2>AI to Help with Legacy Modernization</h2>
-<p><strong>Key message:</strong> This started as a real engineering problem, not an AI experiment.</p>
-<ul><li>Legacy modernization need</li><li>ClearCase migration context</li><li>Reduce manual engineering effort</li><li>Explore GitHub Copilot for modernization</li><li>Standardize parts of engineering execution</li></ul></section>
-<section><div class="kicker">Slide 6 - Enablement and Workshops</div>
-<h2>The Right Microsoft Motion</h2>
-<p><strong>Key message:</strong> We responded with valuable enablement.</p>
-<ul><li>Advanced GitHub Copilot training</li><li>Prompt files and reusable instructions</li><li>Intro to agents and skills</li><li>Agentic SDLC workshop</li><li>Here is how it could work</li></ul></section>
-<section><div class="kicker">Slide 7 - What the Workshops Delivered</div>
-<h2>The Customer Learned the Mechanics</h2>
-<p><strong>Key message:</strong> The workshops showed the art of the possible.</p>
-<ul><li>Meeting notes to structured requirements</li><li>Requirements to issues</li><li>Issues to pull requests</li><li>Reusable prompts and instructions</li><li>Copilot across the SDLC</li></ul>
-<p class="small"><em>Speaker note: Knowing the mechanics is not the same as running the work through it.</em></p></section>
-<section><div class="kicker">Slide 8 - From Demo to Real Design</div>
-<h2>The Work Became Concrete</h2>
-<p><strong>Key message:</strong> After the workshop, the engagement moved from general capability into Honeywell&#39;s actual implementation problem.</p>
-<ul><li>Follow-up email loop with Gary</li><li>Real build artifacts surfaced</li><li>Real constraints became visible</li><li>Problem reframed step by step</li><li>Decision boundaries started to emerge</li></ul>
+<section class="slide layout-icon"><div class="kicker">Initial Ask</div>
+<h2>AI to help with legacy modernization</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="4"/><path d="M16 24 L48 24 M16 32 L40 32 M16 40 L36 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+<p class="tagline">A real engineering problem, not an AI experiment.</p>
+<div class="chips"><div class="chip">ClearCase migration context</div><div class="chip">Reduce manual effort</div><div class="chip">Standardize execution</div></div></section>
+<section class="slide layout-icon"><div class="kicker">Enablement and Workshops</div>
+<h2>The right Microsoft motion</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="4"/><circle cx="44" cy="20" r="6" stroke="currentColor" stroke-width="4"/><path d="M8 50 C 8 40, 16 36, 20 36 C 24 36, 32 40, 32 50 M32 50 C 32 40, 40 36, 44 36 C 48 36, 56 40, 56 50" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+<p class="tagline">We responded with valuable enablement.</p>
+<div class="chips"><div class="chip">Advanced Copilot training</div><div class="chip">Prompt files + instructions</div><div class="chip">Agents and skills</div><div class="chip">Agentic SDLC workshop</div></div></section>
+<section class="slide layout-icon"><div class="kicker">What the Workshops Delivered</div>
+<h2>The customer learned the mechanics</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22 L32 10 L58 22 L32 34 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><path d="M16 30 L16 44 C 16 48, 24 52, 32 52 C 40 52, 48 48, 48 44 L48 30" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+<p class="tagline">The workshops showed the art of the possible — but knowing is not doing.</p>
+<div class="chips"><div class="chip">Notes → requirements</div><div class="chip">Requirements → issues</div><div class="chip">Issues → pull requests</div><div class="chip">Copilot across the SDLC</div></div></section>
+<section class="slide layout-icon"><div class="kicker">From Demo to Real Design</div>
+<h2>The work became concrete</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 44 L58 44" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M14 44 L14 24 M30 44 L30 18 M50 44 L50 24" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M8 18 C 20 8, 44 8, 56 18" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+<p class="tagline">Real artifacts and real constraints surfaced Honeywell&#39;s actual implementation problem.</p>
 <div class="bottom-line"><strong>Bottom line:</strong> This was the bridge between workshop learning and execution reality.</div></section>
-<section><div class="kicker">Slide 9 - Implementation Friction</div>
-<h2>Getting Lost at the Implementation Level</h2>
-<p><strong>Key message:</strong> This was the signal that more training was not enough.</p>
-<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">At a high level this makes sense, but I am getting lost at the implementation level.</blockquote>
-<ul><li>Direction was understood</li><li>Execution structure was missing</li><li>Working sessions were needed</li><li>A durable design surface was needed</li></ul></section>
-<section><div class="kicker">Slide 10 - Core Insight</div>
-<h2>The Problem Was Not Copilot Training. It Was the Missing System.</h2>
-<p><strong>Key message:</strong> Copilot needs a persistent system to work against.</p>
-<ul><li>Requirements needed a home</li><li>Decisions needed to be externalized</li><li>Constraints needed to be visible</li><li>Design needed to be iterated</li><li>Copilot needed shared context</li></ul>
+<section class="slide layout-icon"><div class="kicker">Implementation Friction</div>
+<h2>Getting lost at the implementation level</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6 L58 54 L6 54 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><path d="M32 24 L32 40" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="48" r="2.5" fill="currentColor"/></svg></div>
+<p class="tagline">Direction was understood. Execution structure was missing.</p>
+<div class="quotes"><blockquote class="pull-quote">At a high level this makes sense, but I am getting lost at the implementation level.</blockquote></div></section>
+<section class="slide layout-icon"><div class="kicker">Core Insight</div>
+<h2>The problem was not training. It was the missing system.</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6 C 22 6, 14 14, 14 24 C 14 32, 20 36, 22 42 L42 42 C 44 36, 50 32, 50 24 C 50 14, 42 6, 32 6 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><path d="M24 50 L40 50 M26 56 L38 56" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div>
+<p class="tagline">Copilot needs a persistent system to work against.</p>
+<div class="chips"><div class="chip">Requirements need a home</div><div class="chip">Decisions externalized</div><div class="chip">Constraints visible</div><div class="chip">Shared context</div></div>
 <div class="bottom-line"><strong>Bottom line:</strong> Copilot becomes operational when the work becomes addressable.</div></section>
-<section><div class="kicker">Slide 11 - Thinking System Installed</div>
-<h2>Spec-Driven Repo Created</h2>
-<p><strong>Key message:</strong> Instead of more training, we installed a working system.</p>
-<ul><li>Spec-driven repo created</li><li>Decisions and design externalized</li><li>Requirements became structured</li><li>Copilot had durable context</li><li>Work moved from conversation into system</li></ul></section>
-<section class="has-visual"><div class="kicker">Slide 12 - What Changed</div>
-<h2>From Ad Hoc Prompting to Structured Execution</h2>
+<section class="slide layout-icon"><div class="kicker">Thinking System Installed</div>
+<h2>Spec-driven repo created</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="4"/><path d="M8 24 L56 24" stroke="currentColor" stroke-width="4"/><circle cx="14" cy="18" r="2" fill="currentColor"/><circle cx="22" cy="18" r="2" fill="currentColor"/><path d="M16 36 L28 36 M16 44 L40 44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+<p class="tagline">Instead of more training, we installed a working system.</p>
+<div class="chips"><div class="chip">Decisions externalized</div><div class="chip">Structured requirements</div><div class="chip">Durable Copilot context</div></div></section>
+<section class="slide layout-visual"><div class="kicker">What Changed</div>
+<h2>From ad hoc prompting to structured execution</h2>
+<img class="hero-svg" src="assets/before-after.svg" alt="From ad hoc prompting to structured execution" />
 
-    <div class="split small">
-      <div class="card">
-        <h4>Before</h4>
-        <ul><li>Ask Copilot questions</li><li>Ad hoc prompts</li><li>Re-explain context</li><li>Individual usage</li><li>Assistant beside work</li></ul>
-      </div>
-      <div class="card">
-        <h4>After</h4>
-        <ul><li>Work through the repo</li><li>Structured iteration</li><li>Context lives in system</li><li>Shared team surface</li><li>Execution interface</li></ul>
-      </div>
+    <div class="split">
+      <div class="card before"><h4>Before</h4><div class="chips"><div class="chip">Ask questions</div><div class="chip">Ad hoc prompts</div><div class="chip">Re-explain context</div><div class="chip">Assistant beside work</div></div></div>
+      <div class="card after"><h4>After</h4><div class="chips"><div class="chip">Work through repo</div><div class="chip">Structured iteration</div><div class="chip">Context in system</div><div class="chip">Execution interface</div></div></div>
     </div>
-  
-<img class="diagram" src="assets/before-after.svg" alt="From Ad Hoc Prompting to Structured Execution" /></section>
-<section><div class="kicker">Slide 13 - Current State</div>
-<h2>Customer-Owned Iteration Has Started</h2>
-<p><strong>Key message:</strong> Honeywell is no longer just learning Copilot - they are using the framework to run their own planning and iteration.</p>
-<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">AI is walking me through the process it wants with respect to details.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">I am specifying information specific to how we are doing things.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">AI seems to be asking very relevant questions as it updates the project.</blockquote>
-<ul><li>Gary is using AI to guide the planning process</li><li>Honeywell-specific context is being added into the system</li><li>AI is asking relevant follow-up questions</li><li>Gary is testing, adjusting, and improving the project</li><li>The customer does not currently need Microsoft support</li></ul>
+  </section>
+<section class="slide layout-visual"><div class="kicker">Current State</div>
+<h2>Customer-owned iteration has started</h2>
+<img class="hero-svg" src="assets/customer-iteration.svg" alt="Customer-owned iteration has started" />
+<div class="quotes"><blockquote class="pull-quote">I am specifying information specific to how we are doing things.</blockquote><blockquote class="pull-quote">AI seems to be asking very relevant questions as it updates the project.</blockquote></div>
 <div class="bottom-line"><strong>Bottom line:</strong> The framework gave the customer a way to continue without Microsoft being in every step.</div></section>
-<section><div class="kicker">Slide 14 - Expansion Signal</div>
-<h2>The Pattern Is Already Spreading</h2>
-<p><strong>Key message:</strong> The strongest signal is not satisfaction - it is replication.</p>
-<blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">I&#39;ve been impressed enough to try and create two other projects for other tasks I am working on.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">It certainly looks like I can iterate and improve as I go.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">At this time, I don&#39;t see anything I need your support for.</blockquote><blockquote class="small" style="border-left:4px solid #8aa8ff;padding-left:1rem;">I really appreciate that you provided the framework to get started.</blockquote>
-<ul><li>The customer sees the approach as repeatable</li><li>The framework is enabling self-service progress</li><li>AI is becoming part of the project execution process</li><li>Microsoft&#39;s value shifted from answering each question to providing the operating framework</li><li>The engagement created pull for broader adoption</li></ul>
+<section class="slide layout-visual"><div class="kicker">Expansion Signal</div>
+<h2>The pattern is already spreading</h2>
+<img class="hero-svg" src="assets/expansion-signal.svg" alt="The pattern is already spreading" />
 <div class="bottom-line"><strong>Bottom line:</strong> This moved from a one-project artifact to a repeatable way of working.</div></section>
-<section><div class="kicker">Slide 15 - Business Impact</div>
-<h2>This Roots Microsoft AI in Customer Execution</h2>
-<p><strong>Key message:</strong> When the customer uses AI inside a thinking system, Microsoft AI becomes part of how projects are planned, refined, and executed.</p>
+<section class="slide layout-text"><div class="kicker">Business Impact</div>
+<h2>This roots Microsoft AI in customer execution</h2>
 
-    <div class="split small">
+    <div class="split">
       <div class="card">
         <h4>For Honeywell</h4>
-        <ul><li>AI is guiding the planning process</li><li>Customer is adding company-specific implementation context</li><li>The system is asking relevant questions</li><li>Customer is testing and adjusting the project</li><li>Pattern is already being tried on two other projects</li></ul>
+        <div class="chips"><div class="chip">AI guides planning</div><div class="chip">Company context added</div><div class="chip">Relevant questions surface</div><div class="chip">Customer iterates alone</div><div class="chip">Three projects in motion</div></div>
       </div>
       <div class="card">
         <h4>For Microsoft</h4>
-        <ul><li>GitHub Copilot moves from Q&amp;A to execution support</li><li>Microsoft becomes the partner that provided the framework</li><li>Customer can scale the pattern without Microsoft in every meeting</li><li>Expansion comes from the customer seeing the method work and reusing it</li></ul>
+        <div class="chips"><div class="chip">Copilot → execution support</div><div class="chip">Framework partner role</div><div class="chip">Scales without us in every meeting</div><div class="chip">Customer-led expansion</div></div>
       </div>
     </div>
   
-<div class="bottom-line"><strong>Bottom line:</strong> The customer is not just using Copilot around the work. They are using AI to structure, question, update, and advance the work.</div></section>
-<section class="has-visual"><div class="kicker">Slide 16 - Visual Timeline</div>
-<h2>The Engagement Moved from Enablement to Execution</h2>
-<ul><li>Legacy modernization created the opening</li><li>Copilot enablement built shared vocabulary</li><li>Workshop demos exposed what was possible</li><li>Real artifacts revealed execution friction</li><li>A spec-driven repo gave the work a home</li><li>Customer-owned iteration: AI walks Gary through planning, asks relevant questions, and updates the project</li><li>Gary is already trying the pattern on two other projects</li></ul>
-<img class="diagram" src="assets/timeline.svg" alt="The Engagement Moved from Enablement to Execution" /></section>
-<section class="has-visual"><div class="kicker">Slide 17 - Adoption Model</div>
-<h2>Copilot Adoption Evolves Through Friction</h2>
-<ul><li>Awareness creates interest</li><li>Exploration proves individual utility</li><li>Friction exposes missing workflow structure</li><li>System installation makes context durable</li><li>Workflow integration changes daily execution</li><li>Scale reuses the pattern across projects</li></ul>
-<img class="diagram" src="assets/adoption-model.svg" alt="Copilot Adoption Evolves Through Friction" /></section>
-<section class="has-visual"><div class="kicker">Slide 18 - Reusable CSA Framework</div>
-<h2>A Repeatable CSA Motion Emerged</h2>
-<ul><li>Externalize real artifacts, decisions, and constraints</li><li>Structure scattered thinking into design boundaries</li><li>Install a system Copilot can work against</li><li>Execute inside the system, not around it</li><li>Repeat the pattern across similar projects</li></ul>
-<img class="diagram" src="assets/framework-loop.svg" alt="A Repeatable CSA Motion Emerged" /></section>
-<section><div class="kicker">Slide 19 - What This Means for CSA Work</div>
-<h2>We Should Not Stop at Copilot Enablement</h2>
+<div class="bottom-line"><strong>Bottom line:</strong> The customer is not just using Copilot around the work — they are using AI to structure, question, update, and advance the work.</div></section>
+<section class="slide layout-visual"><div class="kicker">Visual Timeline</div>
+<h2>Enablement → execution → expansion</h2>
+<img class="hero-svg" src="assets/timeline.svg" alt="Enablement → execution → expansion" />
+<p class="tagline">Gary is already trying the pattern on two other projects.</p></section>
+<section class="slide layout-visual"><div class="kicker">Adoption Model</div>
+<h2>Copilot adoption evolves through friction</h2>
+<img class="hero-svg" src="assets/adoption-model.svg" alt="Copilot adoption evolves through friction" /></section>
+<section class="slide layout-visual"><div class="kicker">Reusable CSA Framework</div>
+<h2>A repeatable motion emerged</h2>
+<img class="hero-svg" src="assets/framework-loop.svg" alt="A repeatable motion emerged" /></section>
+<section class="slide layout-text"><div class="kicker">What This Means for CSA Work</div>
+<h2>Stop at enablement and you stop short</h2>
 
-    <div class="split small">
+    <div class="split">
       <div class="card">
         <h4>Stop measuring</h4>
-        <ul><li>Attendance</li><li>Prompt usage</li><li>Feature familiarity</li><li>Workshop completion</li></ul>
+        <div class="chips"><div class="chip">Attendance</div><div class="chip">Prompt usage</div><div class="chip">Feature familiarity</div><div class="chip">Workshop completion</div></div>
       </div>
       <div class="card">
         <h4>Start measuring</h4>
-        <ul><li>Work externalized into repos</li><li>Decisions captured in system</li><li>Copilot used in execution loops</li><li>Patterns reused by teams</li></ul>
+        <div class="chips"><div class="chip">Work in repos</div><div class="chip">Decisions captured</div><div class="chip">Copilot in execution loops</div><div class="chip">Patterns reused</div></div>
       </div>
     </div>
   
 <div class="bottom-line"><strong>Bottom line:</strong> Success metric: the team runs work through Copilot, not just beside it.</div></section>
-<section><div class="kicker">Slide 20 - Opportunity</div>
-<h2>Standardize This as a Microsoft Engagement Pattern</h2>
-<ul><li>Package the motion as a repeatable engagement playbook</li><li>Create templates for moving from demo to real design</li><li>Provide spec-driven repo starters</li><li>Standardize GitHub Copilot workflow guidance</li><li>Build thinking-system templates for common scenarios</li><li>Use a CSA coaching agent to reinforce the pattern</li></ul>
-<div class="bottom-line"><strong>Bottom line:</strong> Motion: initial ask -&gt; enablement -&gt; real design -&gt; system installation -&gt; customer-owned iteration -&gt; repeat.</div></section>
-<section><div class="kicker">Slide 21 - Closing Insight</div>
-<h2>The Lesson from Honeywell</h2>
-<p><strong>Key message:</strong> Copilot remains advanced search until the work is externalized into a system the customer can run on their own.</p>
-<ul><li>Workshops create awareness</li><li>Real design creates clarity</li><li>A thinking system creates adoption</li><li>Customer-owned iteration creates business impact</li></ul></section>
+<section class="slide layout-icon"><div class="kicker">Opportunity</div>
+<h2>Standardize this as a Microsoft engagement pattern</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6 C 42 16, 46 30, 46 40 L18 40 C 18 30, 22 16, 32 6 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><circle cx="32" cy="24" r="4" stroke="currentColor" stroke-width="3"/><path d="M18 40 L10 54 L22 48 M46 40 L54 54 L42 48" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/></svg></div>
+<p class="tagline">Initial ask → enablement → real design → system install → customer-owned iteration → repeat.</p>
+<div class="chips"><div class="chip">Playbook</div><div class="chip">Demo-to-design templates</div><div class="chip">Spec-driven repo starters</div><div class="chip">Copilot workflow guidance</div><div class="chip">CSA coaching agent</div></div></section>
+<section class="slide layout-icon"><div class="kicker">Closing Insight</div>
+<h2>The lesson from Honeywell</h2>
+<div class="hero-icon"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 10 L46 10 L46 28 C 46 36, 40 42, 32 42 C 24 42, 18 36, 18 28 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/><path d="M18 16 L8 16 L8 22 C 8 28, 14 32, 18 32 M46 16 L56 16 L56 22 C 56 28, 50 32, 46 32" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M24 42 L24 50 L40 50 L40 42 M20 50 L44 50 L44 56 L20 56 Z" stroke="currentColor" stroke-width="4" fill="none" stroke-linejoin="round"/></svg></div>
+<p class="tagline">Copilot remains advanced search until the work is externalized into a system the customer can run on their own.</p>
+<div class="chips"><div class="chip">Workshops → awareness</div><div class="chip">Real design → clarity</div><div class="chip">Thinking system → adoption</div><div class="chip">Customer-owned → impact</div></div></section>
       </div>
     </div>
     <script src="node_modules/reveal.js/dist/reveal.js"></script>
@@ -229,7 +309,7 @@
       Reveal.initialize({
         width: 1280,
         height: 720,
-        margin: 0.14,
+        margin: 0.08,
         minScale: 0.2,
         maxScale: 1.05,
         hash: true,

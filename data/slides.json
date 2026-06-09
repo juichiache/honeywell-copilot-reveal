@@ -1,37 +1,28 @@
 [
   {
-    "title": "Case Study: Why Copilot Stays in Search Mode",
-    "subtitle": "Honeywell: From Copilot training to customer-owned AI-assisted iteration",
-    "kicker": "Slide 1 - Title"
+    "kicker": "Case Study",
+    "title": "Why Copilot Stays in Search Mode",
+    "subtitle": "Honeywell: from Copilot training to customer-owned AI-assisted iteration",
+    "titleOnly": true
   },
   {
-    "title": "Leadership Summary",
-    "kicker": "Slide 2 - Leadership Framing",
-    "keyMessage": "Honeywell moved from \"AI could help with modernization\" to customer-owned AI-assisted planning and iteration.",
-    "bullets": [
-      "Started with: AI to help with legacy modernization",
-      "Microsoft delivered: Copilot training and Agentic SDLC workshops",
-      "Real work surfaced implementation friction the training did not solve",
-      "We installed a spec-driven thinking system Copilot could operate against",
-      "Customer now runs planning and iteration through AI on their own",
-      "Strongest proof: Gary is applying the pattern to two more projects without Microsoft support"
-    ],
-    "bottomLine": "Microsoft's value was the framework, not the hand-holding."
+    "kicker": "Leadership Summary",
+    "title": "From \"AI could help\" to customer-owned iteration",
+    "visual": "assets/leadership-arc.svg",
+    "bottomLine": "Microsoft's value was the framework, not the hand-holding. Gary is now running the pattern across two more projects on his own."
   },
   {
-    "title": "Senior Engineers Still Use Copilot Like Advanced Search",
-    "kicker": "Slide 3 - The Reality",
+    "kicker": "The Reality",
+    "title": "Copilot is used like advanced search",
     "visual": "assets/current-way-diagram.svg",
-    "keyMessage": "The default state of Copilot adoption is search mode.",
-    "quotes": [
-      "Most of the org treats Copilot like an advanced Google search."
-    ],
+    "quotes": ["Most of the org treats Copilot like an advanced Google search."],
     "bottomLine": "Copilot stays in Q&A mode when work has no durable system for Copilot to operate against."
   },
   {
-    "title": "Knowing the Mechanics != Running Work Through Copilot",
-    "kicker": "Slide 4 - The Adoption Gap",
-    "keyMessage": "Training can teach what Copilot can do, but it does not automatically change how engineering work is executed.",
+    "kicker": "The Adoption Gap",
+    "title": "Knowing the mechanics is not running work through it",
+    "icon": "gap",
+    "tagline": "Training teaches what Copilot can do. It does not change how engineering work is executed.",
     "quotes": [
       "The average one does not understand agents or skills.",
       "Agents are still confusing."
@@ -39,257 +30,130 @@
     "bottomLine": "Feature awareness is not workflow transformation."
   },
   {
-    "title": "AI to Help with Legacy Modernization",
-    "kicker": "Slide 5 - Initial Ask",
-    "keyMessage": "This started as a real engineering problem, not an AI experiment.",
-    "bullets": [
-      "Legacy modernization need",
-      "ClearCase migration context",
-      "Reduce manual engineering effort",
-      "Explore GitHub Copilot for modernization",
-      "Standardize parts of engineering execution"
-    ]
+    "kicker": "Initial Ask",
+    "title": "AI to help with legacy modernization",
+    "icon": "legacy",
+    "tagline": "A real engineering problem, not an AI experiment.",
+    "points": ["ClearCase migration context", "Reduce manual effort", "Standardize execution"]
   },
   {
-    "title": "The Right Microsoft Motion",
-    "kicker": "Slide 6 - Enablement and Workshops",
-    "keyMessage": "We responded with valuable enablement.",
-    "bullets": [
-      "Advanced GitHub Copilot training",
-      "Prompt files and reusable instructions",
-      "Intro to agents and skills",
-      "Agentic SDLC workshop",
-      "Here is how it could work"
-    ]
+    "kicker": "Enablement and Workshops",
+    "title": "The right Microsoft motion",
+    "icon": "workshop",
+    "tagline": "We responded with valuable enablement.",
+    "points": ["Advanced Copilot training", "Prompt files + instructions", "Agents and skills", "Agentic SDLC workshop"]
   },
   {
-    "title": "The Customer Learned the Mechanics",
-    "kicker": "Slide 7 - What the Workshops Delivered",
-    "keyMessage": "The workshops showed the art of the possible.",
-    "bullets": [
-      "Meeting notes to structured requirements",
-      "Requirements to issues",
-      "Issues to pull requests",
-      "Reusable prompts and instructions",
-      "Copilot across the SDLC"
-    ],
-    "speakerNote": "Knowing the mechanics is not the same as running the work through it."
+    "kicker": "What the Workshops Delivered",
+    "title": "The customer learned the mechanics",
+    "icon": "learn",
+    "tagline": "The workshops showed the art of the possible \u2014 but knowing is not doing.",
+    "points": ["Notes \u2192 requirements", "Requirements \u2192 issues", "Issues \u2192 pull requests", "Copilot across the SDLC"]
   },
   {
-    "title": "The Work Became Concrete",
-    "kicker": "Slide 8 - From Demo to Real Design",
-    "keyMessage": "After the workshop, the engagement moved from general capability into Honeywell's actual implementation problem.",
-    "bullets": [
-      "Follow-up email loop with Gary",
-      "Real build artifacts surfaced",
-      "Real constraints became visible",
-      "Problem reframed step by step",
-      "Decision boundaries started to emerge"
-    ],
+    "kicker": "From Demo to Real Design",
+    "title": "The work became concrete",
+    "icon": "bridge",
+    "tagline": "Real artifacts and real constraints surfaced Honeywell's actual implementation problem.",
     "bottomLine": "This was the bridge between workshop learning and execution reality."
   },
   {
-    "title": "Getting Lost at the Implementation Level",
-    "kicker": "Slide 9 - Implementation Friction",
-    "keyMessage": "This was the signal that more training was not enough.",
-    "quotes": [
-      "At a high level this makes sense, but I am getting lost at the implementation level."
-    ],
-    "bullets": [
-      "Direction was understood",
-      "Execution structure was missing",
-      "Working sessions were needed",
-      "A durable design surface was needed"
-    ]
+    "kicker": "Implementation Friction",
+    "title": "Getting lost at the implementation level",
+    "icon": "friction",
+    "quotes": ["At a high level this makes sense, but I am getting lost at the implementation level."],
+    "tagline": "Direction was understood. Execution structure was missing."
   },
   {
-    "title": "The Problem Was Not Copilot Training. It Was the Missing System.",
-    "kicker": "Slide 10 - Core Insight",
-    "keyMessage": "Copilot needs a persistent system to work against.",
-    "bullets": [
-      "Requirements needed a home",
-      "Decisions needed to be externalized",
-      "Constraints needed to be visible",
-      "Design needed to be iterated",
-      "Copilot needed shared context"
-    ],
+    "kicker": "Core Insight",
+    "title": "The problem was not training. It was the missing system.",
+    "icon": "insight",
+    "tagline": "Copilot needs a persistent system to work against.",
+    "points": ["Requirements need a home", "Decisions externalized", "Constraints visible", "Shared context"],
     "bottomLine": "Copilot becomes operational when the work becomes addressable."
   },
   {
-    "title": "Spec-Driven Repo Created",
-    "kicker": "Slide 11 - Thinking System Installed",
-    "keyMessage": "Instead of more training, we installed a working system.",
-    "bullets": [
-      "Spec-driven repo created",
-      "Decisions and design externalized",
-      "Requirements became structured",
-      "Copilot had durable context",
-      "Work moved from conversation into system"
-    ]
+    "kicker": "Thinking System Installed",
+    "title": "Spec-driven repo created",
+    "icon": "system",
+    "tagline": "Instead of more training, we installed a working system.",
+    "points": ["Decisions externalized", "Structured requirements", "Durable Copilot context"]
   },
   {
-    "title": "From Ad Hoc Prompting to Structured Execution",
-    "kicker": "Slide 12 - What Changed",
+    "kicker": "What Changed",
+    "title": "From ad hoc prompting to structured execution",
     "visual": "assets/before-after.svg",
     "beforeAfter": {
-      "before": [
-        "Ask Copilot questions",
-        "Ad hoc prompts",
-        "Re-explain context",
-        "Individual usage",
-        "Assistant beside work"
-      ],
-      "after": [
-        "Work through the repo",
-        "Structured iteration",
-        "Context lives in system",
-        "Shared team surface",
-        "Execution interface"
-      ]
+      "before": ["Ask questions", "Ad hoc prompts", "Re-explain context", "Assistant beside work"],
+      "after": ["Work through repo", "Structured iteration", "Context in system", "Execution interface"]
     }
   },
   {
-    "title": "Customer-Owned Iteration Has Started",
-    "kicker": "Slide 13 - Current State",
-    "keyMessage": "Honeywell is no longer just learning Copilot - they are using the framework to run their own planning and iteration.",
+    "kicker": "Current State",
+    "title": "Customer-owned iteration has started",
+    "visual": "assets/customer-iteration.svg",
     "quotes": [
-      "AI is walking me through the process it wants with respect to details.",
       "I am specifying information specific to how we are doing things.",
       "AI seems to be asking very relevant questions as it updates the project."
-    ],
-    "bullets": [
-      "Gary is using AI to guide the planning process",
-      "Honeywell-specific context is being added into the system",
-      "AI is asking relevant follow-up questions",
-      "Gary is testing, adjusting, and improving the project",
-      "The customer does not currently need Microsoft support"
     ],
     "bottomLine": "The framework gave the customer a way to continue without Microsoft being in every step."
   },
   {
-    "title": "The Pattern Is Already Spreading",
-    "kicker": "Slide 14 - Expansion Signal",
-    "keyMessage": "The strongest signal is not satisfaction - it is replication.",
-    "quotes": [
-      "I've been impressed enough to try and create two other projects for other tasks I am working on.",
-      "It certainly looks like I can iterate and improve as I go.",
-      "At this time, I don't see anything I need your support for.",
-      "I really appreciate that you provided the framework to get started."
-    ],
-    "bullets": [
-      "The customer sees the approach as repeatable",
-      "The framework is enabling self-service progress",
-      "AI is becoming part of the project execution process",
-      "Microsoft's value shifted from answering each question to providing the operating framework",
-      "The engagement created pull for broader adoption"
-    ],
+    "kicker": "Expansion Signal",
+    "title": "The pattern is already spreading",
+    "visual": "assets/expansion-signal.svg",
     "bottomLine": "This moved from a one-project artifact to a repeatable way of working."
   },
   {
-    "title": "This Roots Microsoft AI in Customer Execution",
-    "kicker": "Slide 15 - Business Impact",
-    "keyMessage": "When the customer uses AI inside a thinking system, Microsoft AI becomes part of how projects are planned, refined, and executed.",
-    "splitBullets": {
+    "kicker": "Business Impact",
+    "title": "This roots Microsoft AI in customer execution",
+    "split": {
       "leftTitle": "For Honeywell",
-      "left": [
-        "AI is guiding the planning process",
-        "Customer is adding company-specific implementation context",
-        "The system is asking relevant questions",
-        "Customer is testing and adjusting the project",
-        "Pattern is already being tried on two other projects"
-      ],
+      "left": ["AI guides planning", "Company context added", "Relevant questions surface", "Customer iterates alone", "Three projects in motion"],
       "rightTitle": "For Microsoft",
-      "right": [
-        "GitHub Copilot moves from Q&A to execution support",
-        "Microsoft becomes the partner that provided the framework",
-        "Customer can scale the pattern without Microsoft in every meeting",
-        "Expansion comes from the customer seeing the method work and reusing it"
-      ]
+      "right": ["Copilot \u2192 execution support", "Framework partner role", "Scales without us in every meeting", "Customer-led expansion"]
     },
-    "bottomLine": "The customer is not just using Copilot around the work. They are using AI to structure, question, update, and advance the work."
+    "bottomLine": "The customer is not just using Copilot around the work \u2014 they are using AI to structure, question, update, and advance the work."
   },
   {
-    "title": "The Engagement Moved from Enablement to Execution",
-    "kicker": "Slide 16 - Visual Timeline",
+    "kicker": "Visual Timeline",
+    "title": "Enablement \u2192 execution \u2192 expansion",
     "visual": "assets/timeline.svg",
-    "bullets": [
-      "Legacy modernization created the opening",
-      "Copilot enablement built shared vocabulary",
-      "Workshop demos exposed what was possible",
-      "Real artifacts revealed execution friction",
-      "A spec-driven repo gave the work a home",
-      "Customer-owned iteration: AI walks Gary through planning, asks relevant questions, and updates the project",
-      "Gary is already trying the pattern on two other projects"
-    ]
+    "tagline": "Gary is already trying the pattern on two other projects."
   },
   {
-    "title": "Copilot Adoption Evolves Through Friction",
-    "kicker": "Slide 17 - Adoption Model",
-    "visual": "assets/adoption-model.svg",
-    "bullets": [
-      "Awareness creates interest",
-      "Exploration proves individual utility",
-      "Friction exposes missing workflow structure",
-      "System installation makes context durable",
-      "Workflow integration changes daily execution",
-      "Scale reuses the pattern across projects"
-    ]
+    "kicker": "Adoption Model",
+    "title": "Copilot adoption evolves through friction",
+    "visual": "assets/adoption-model.svg"
   },
   {
-    "title": "A Repeatable CSA Motion Emerged",
-    "kicker": "Slide 18 - Reusable CSA Framework",
-    "visual": "assets/framework-loop.svg",
-    "bullets": [
-      "Externalize real artifacts, decisions, and constraints",
-      "Structure scattered thinking into design boundaries",
-      "Install a system Copilot can work against",
-      "Execute inside the system, not around it",
-      "Repeat the pattern across similar projects"
-    ]
+    "kicker": "Reusable CSA Framework",
+    "title": "A repeatable motion emerged",
+    "visual": "assets/framework-loop.svg"
   },
   {
-    "title": "We Should Not Stop at Copilot Enablement",
-    "kicker": "Slide 19 - What This Means for CSA Work",
-    "splitBullets": {
+    "kicker": "What This Means for CSA Work",
+    "title": "Stop at enablement and you stop short",
+    "split": {
       "leftTitle": "Stop measuring",
-      "left": [
-        "Attendance",
-        "Prompt usage",
-        "Feature familiarity",
-        "Workshop completion"
-      ],
+      "left": ["Attendance", "Prompt usage", "Feature familiarity", "Workshop completion"],
       "rightTitle": "Start measuring",
-      "right": [
-        "Work externalized into repos",
-        "Decisions captured in system",
-        "Copilot used in execution loops",
-        "Patterns reused by teams"
-      ]
+      "right": ["Work in repos", "Decisions captured", "Copilot in execution loops", "Patterns reused"]
     },
     "bottomLine": "Success metric: the team runs work through Copilot, not just beside it."
   },
   {
-    "title": "Standardize This as a Microsoft Engagement Pattern",
-    "kicker": "Slide 20 - Opportunity",
-    "bullets": [
-      "Package the motion as a repeatable engagement playbook",
-      "Create templates for moving from demo to real design",
-      "Provide spec-driven repo starters",
-      "Standardize GitHub Copilot workflow guidance",
-      "Build thinking-system templates for common scenarios",
-      "Use a CSA coaching agent to reinforce the pattern"
-    ],
-    "bottomLine": "Motion: initial ask -> enablement -> real design -> system installation -> customer-owned iteration -> repeat."
+    "kicker": "Opportunity",
+    "title": "Standardize this as a Microsoft engagement pattern",
+    "icon": "rocket",
+    "tagline": "Initial ask \u2192 enablement \u2192 real design \u2192 system install \u2192 customer-owned iteration \u2192 repeat.",
+    "points": ["Playbook", "Demo-to-design templates", "Spec-driven repo starters", "Copilot workflow guidance", "CSA coaching agent"]
   },
   {
-    "title": "The Lesson from Honeywell",
-    "kicker": "Slide 21 - Closing Insight",
-    "keyMessage": "Copilot remains advanced search until the work is externalized into a system the customer can run on their own.",
-    "bullets": [
-      "Workshops create awareness",
-      "Real design creates clarity",
-      "A thinking system creates adoption",
-      "Customer-owned iteration creates business impact"
-    ]
+    "kicker": "Closing Insight",
+    "title": "The lesson from Honeywell",
+    "icon": "trophy",
+    "tagline": "Copilot remains advanced search until the work is externalized into a system the customer can run on their own.",
+    "points": ["Workshops \u2192 awareness", "Real design \u2192 clarity", "Thinking system \u2192 adoption", "Customer-owned \u2192 impact"]
   }
 ]
