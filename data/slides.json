@@ -38,9 +38,10 @@
   {
     "kicker": "What Changed",
     "title": "From ad hoc prompting to structured execution",
+    "tagline": "Installing the thinking system changed how Copilot fits into the work.",
     "beforeAfter": {
-      "before": ["Ask questions", "Ad hoc prompts", "Re-explain context", "Assistant beside work"],
-      "after": ["Work through repo", "Structured iteration", "Context in system", "Copilot-led execution"]
+      "before": ["Ask questions", "Ad hoc prompts", "Re-explain context each time", "Assistant beside the work"],
+      "after": ["Work through the repo", "Structured iteration", "Context lives in the system", "Copilot-led execution"]
     },
     "bottomLine": "Same tool. Different relationship to the work."
   },
