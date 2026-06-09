@@ -1,0 +1,53 @@
+<svg width="1600" height="700" viewBox="0 0 1600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="700" fill="#F8FAFC"/>
+
+  <!-- BEFORE panel -->
+  <rect x="60" y="60" width="680" height="580" rx="16" fill="#FEF9EE" stroke="#F59E0B" stroke-width="3"/>
+  <text x="400" y="116" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#92400E">Before</text>
+  <text x="400" y="148" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#B45309">Ad hoc. Context-less. Beside the work.</text>
+
+  <rect x="100" y="175" width="600" height="80" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="400" y="208" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#7F1D1D">Ask Copilot a question</text>
+  <text x="400" y="236" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#991B1B">Each session starts from scratch</text>
+
+  <rect x="100" y="275" width="600" height="80" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="400" y="308" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#7F1D1D">Ad hoc prompts</text>
+  <text x="400" y="336" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#991B1B">No shared structure or memory</text>
+
+  <rect x="100" y="375" width="600" height="80" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="400" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#7F1D1D">Re-explain context every time</text>
+  <text x="400" y="436" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#991B1B">Copilot has no durable understanding</text>
+
+  <rect x="100" y="475" width="600" height="80" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+  <text x="400" y="508" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#7F1D1D">AI beside the work</text>
+  <text x="400" y="536" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#991B1B">Assistant mode only</text>
+
+  <text x="400" y="618" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-style="italic" fill="#B45309">Search mode</text>
+
+  <!-- Arrow -->
+  <path d="M760 350 L840 350" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="840,350 820,338 820,362" fill="#475569"/>
+
+  <!-- AFTER panel -->
+  <rect x="860" y="60" width="680" height="580" rx="16" fill="#F0FDF4" stroke="#4ADE80" stroke-width="3"/>
+  <text x="1200" y="116" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#14532D">After</text>
+  <text x="1200" y="148" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#16A34A">Structured. Persistent. Inside the work.</text>
+
+  <rect x="900" y="175" width="600" height="80" rx="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="1200" y="208" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#14532D">Work through the spec-driven repo</text>
+  <text x="1200" y="236" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#166534">Context lives in the system</text>
+
+  <rect x="900" y="275" width="600" height="80" rx="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="1200" y="308" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#14532D">Structured iteration</text>
+  <text x="1200" y="336" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#166534">Requirements, decisions, constraints tracked</text>
+
+  <rect x="900" y="375" width="600" height="80" rx="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="1200" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#14532D">Copilot has durable context</text>
+  <text x="1200" y="436" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#166534">No re-explanation needed</text>
+
+  <rect x="900" y="475" width="600" height="80" rx="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="1200" y="508" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#14532D">AI inside the work</text>
+  <text x="1200" y="536" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" fill="#166534">Execution interface</text>
+
+  <text x="1200" y="618" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-style="italic" fill="#16A34A">Execution mode</text>
+</svg>

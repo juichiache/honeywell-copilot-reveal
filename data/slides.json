@@ -2,7 +2,7 @@
   {
     "kicker": "Case Study",
     "title": "Why Copilot Stays in Search Mode",
-    "subtitle": "Honeywell: from Copilot training to customer-owned AI-assisted iteration",
+    "subtitle": "From workshop to working system",
     "titleOnly": true
   },
   {
@@ -16,8 +16,7 @@
     "title": "Training alone leaves Copilot in search mode",
     "visual": "assets/current-way-diagram.svg",
     "quotes": [
-      "Most of the org treats Copilot like an advanced Google search.",
-      "Agents are still confusing."
+      "Most of the org treats Copilot like an advanced Google search."
     ],
     "bottomLine": "Feature awareness is not workflow transformation."
   },
@@ -38,20 +37,14 @@
   {
     "kicker": "What Changed",
     "title": "From ad hoc prompting to structured execution",
-    "tagline": "Installing the thinking system changed how Copilot fits into the work.",
-    "beforeAfter": {
-      "before": ["Ask questions", "Ad hoc prompts", "Re-explain context each time", "Assistant beside the work"],
-      "after": ["Work through the repo", "Structured iteration", "Context lives in the system", "Copilot-led execution"]
-    },
-    "bottomLine": "Same tool. Different relationship to the work."
+    "visual": "assets/before-after-comparison.svg"
   },
   {
     "kicker": "Current State",
     "title": "Customer-owned iteration has started",
     "visual": "assets/customer-iteration.svg",
     "quotes": [
-      "AI is walking me through the process it wants with respect to details.",
-      "AI seems to be asking very relevant questions as it updates the project."
+      "AI is walking me through the process it wants with respect to details."
     ],
     "bottomLine": "The framework let the customer keep moving without Microsoft in every step."
   },
