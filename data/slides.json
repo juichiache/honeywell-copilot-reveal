@@ -38,7 +38,6 @@
   {
     "kicker": "What Changed",
     "title": "From ad hoc prompting to structured execution",
-    "visual": "assets/before-after.svg",
     "beforeAfter": {
       "before": ["Ask questions", "Ad hoc prompts", "Re-explain context", "Assistant beside work"],
       "after": ["Work through repo", "Structured iteration", "Context in system", "Execution interface"]

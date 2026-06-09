@@ -22,7 +22,7 @@
       .reveal .slides { text-align: center; }
       .reveal section.slide {
         box-sizing: border-box;
-        padding: 0.7rem 1.5rem 0.7rem;
+        padding: 0.5rem 1.5rem 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,9 +36,9 @@
         text-transform: none;
       }
       .reveal h2 {
-        margin: 0.1em 0 0.2em;
-        font-size: 1.45em;
-        line-height: 1.15;
+        margin: 0.08em 0 0.15em;
+        font-size: 1.38em;
+        line-height: 1.12;
       }
       .reveal .subtitle {
         font-size: 0.78em;
@@ -64,12 +64,18 @@
       /* Hero visuals */
       .hero-svg {
         display: block;
-        width: min(86%, 900px);
-        max-height: 36vh;
+        max-width: min(90%, 960px);
+        max-height: 230px;
+        width: auto;
+        height: auto;
         object-fit: contain;
-        margin: 0.3rem auto 0.3rem;
+        margin: 0.3rem auto;
         flex: 0 1 auto;
         min-height: 0;
+        align-self: center;
+        background: rgba(255,255,255,0.93);
+        border-radius: 10px;
+        padding: 6px;
       }
       .hero-icon {
         width: 110px;
@@ -106,17 +112,18 @@
       .quotes {
         display: flex;
         flex-direction: column;
-        gap: 0.35rem;
-        margin: 0.35rem 0;
-        max-width: 88%;
+        gap: 0.25rem;
+        margin: 0.25rem 0;
+        max-width: 90%;
+        flex-shrink: 0;
       }
       .pull-quote {
-        font-size: 0.66em;
+        font-size: 0.62em;
         font-style: italic;
         color: var(--ink);
         border-left: 4px solid var(--accent);
         background: var(--accent-soft);
-        padding: 0.48rem 0.8rem;
+        padding: 0.38rem 0.7rem;
         border-radius: 0 6px 6px 0;
         margin: 0;
         text-align: left;
@@ -126,20 +133,21 @@
       .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        width: 90%;
-        margin: 0.4rem auto;
+        gap: 0.8rem;
+        width: 92%;
+        margin: 0.3rem auto;
+        flex-shrink: 0;
       }
       .card {
         border: 1px solid var(--line);
         border-radius: 10px;
-        padding: 0.65rem 0.8rem;
+        padding: 0.5rem 0.7rem;
         background: var(--card-bg);
         text-align: left;
       }
       .card h4 {
-        margin: 0 0 0.4rem;
-        font-size: 0.8em;
+        margin: 0 0 0.3rem;
+        font-size: 0.75em;
         color: var(--ink);
         opacity: 0.9;
       }
@@ -147,18 +155,18 @@
       .card.before h4 { color: #fcd34d; }
       .card.after { border-color: var(--success); }
       .card.after h4 { color: var(--success); }
-      .card .chips { justify-content: flex-start; margin: 0; }
-      .card .chip { font-size: 0.56em; }
+      .card .chips { justify-content: flex-start; margin: 0; gap: 0.3rem; }
+      .card .chip { font-size: 0.52em; padding: 0.28rem 0.6rem; }
 
-      /* Bottom line — fixed at bottom of slide, never clipped */
+      /* Bottom line — always visible, never clipped */
       .bottom-line {
-        margin-top: 0.4rem;
+        margin-top: 0.3rem;
         flex-shrink: 0;
-        padding: 0.45rem 0.85rem;
+        padding: 0.38rem 0.8rem;
         border-left: 4px solid var(--accent);
         background: var(--accent-soft);
-        font-size: 0.56em;
-        width: 90%;
+        font-size: 0.52em;
+        width: 92%;
         text-align: left;
         border-radius: 0 6px 6px 0;
         align-self: center;
