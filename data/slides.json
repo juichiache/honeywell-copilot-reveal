@@ -9,8 +9,8 @@
     "kicker": "Leadership Summary",
     "title": "From adoption to execution",
     "visual": "assets/leadership-arc.svg",
-    "tagline": "58.6% of Honeywell seats are active. $303.6K ACR YTD. But only 23% of PRs use Copilot review — deployed, not operational.",
-    "bottomLine": "Gary (Sr. Software Engineer Leader) and Tracy (Sr. Engineering Manager, exec sponsor) are already running the fix. This is how we scaled it."
+    "tagline": "58.6% Copilot adoption across Honeywell. $303.6K ACR YTD. But only 23% of PRs use Copilot review — deployed, not operational.",
+    "bottomLine": "Gary (Sr. Software Engineer Leader) and Tracy (Sr. Engineering Manager, exec sponsor) are already running the fix. This is how it started."
   },
   {
     "kicker": "The Stakes",
